@@ -3,13 +3,21 @@
 
 #include <QMainWindow>
 #include <QTextEdit>
-#include <QLineEdit>
 #include <QPushButton>
 #include <QComboBox>
 #include <QLabel>
+#include <QLineEdit>
 #include <QTimer>
+#include <QWidget>
+#include <QGroupBox>
+#include <QScrollBar>
 #include <QDateTime>
 #include <QMenuBar>
+#include <QMenu>
+#include <QAction>
+#include <QStringList>
+#include <QFile>
+#include <QTextStream>
 #include "serialport.h"
 
 QT_BEGIN_NAMESPACE
@@ -27,8 +35,6 @@ public:
 private slots:
     void toggleConnection();
     void sendCommand();
-    void readData();
-    void handleError(const QString &error);
     void onComPortChanged();
     void onBaudRateChanged();
     void checkForData();
@@ -36,33 +42,43 @@ private slots:
 
 private:
     void setupUI();
+    void createMenuBar();
     void createToolbar();
     void createTerminal();
-    void createMenuBar();
-    void logMessage(const QString &message, const QString &prefix = "[INFO] ");
-    void connectToPort();
-    void disconnectFromPort();
     void populateComPorts();
     void populateBaudRates();
+    void connectToPort();
+    void disconnectFromPort();
+    void readData();
+    void handleError(const QString &error);
+    void logMessage(const QString &message, const QString &prefix = "");
     QString cleanAnsiCodes(const QString &input);
+    QString filterShellPrompts(const QString &input);
+    void writeToLogFile(const QString &message);
+    void rotateLogFile();
+    void initializeLogFile();
 
-    // UI Components
+    SerialPort *serialPort;
+    QTimer *dataTimer;
     QWidget *centralWidget;
     QWidget *toolbarWidget;
     QTextEdit *terminal;
-    QLineEdit *commandInput;
     QPushButton *connectButton;
     QPushButton *sendButton;
     QComboBox *comPortCombo;
     QComboBox *baudRateCombo;
+    QLineEdit *commandInput;
     QLabel *statusLabel;
-
-    // Serial Communication
-    SerialPort *serialPort;
-    QTimer *dataTimer;
+    
     bool isConnected;
     QString currentComPort;
     int currentBaudRate;
+    
+    // Log file functionality
+    QFile *logFile;
+    QStringList logBuffer;
+    static const int MAX_LOG_LINES = 10000;
+    QString logFileName;
 };
 
 #endif // MAINWINDOW_H 

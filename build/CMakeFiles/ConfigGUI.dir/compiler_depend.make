@@ -50,8 +50,11 @@ ConfigGUI_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/Program\ Files/CMake/share/cmake-4.1/Modules/Platform/Windows.cmake \
   C:/Program\ Files/CMake/share/cmake-4.1/Modules/Platform/WindowsPaths.cmake \
   C:/Qt/6.9.1/mingw_64/include/QtCore/QDateTime \
+  C:/Qt/6.9.1/mingw_64/include/QtCore/QFile \
   C:/Qt/6.9.1/mingw_64/include/QtCore/QObject \
   C:/Qt/6.9.1/mingw_64/include/QtCore/QString \
+  C:/Qt/6.9.1/mingw_64/include/QtCore/QStringList \
+  C:/Qt/6.9.1/mingw_64/include/QtCore/QTextStream \
   C:/Qt/6.9.1/mingw_64/include/QtCore/QTimer \
   C:/Qt/6.9.1/mingw_64/include/QtCore/q17memory.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/q20functional.h \
@@ -98,6 +101,8 @@ ConfigGUI_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qendian.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qeventloop.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qexceptionhandling.h \
+  C:/Qt/6.9.1/mingw_64/include/QtCore/qfile.h \
+  C:/Qt/6.9.1/mingw_64/include/QtCore/qfiledevice.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qflags.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qfloat16.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qforeach.h \
@@ -191,6 +196,7 @@ ConfigGUI_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qxptype_traits.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qyieldcpu.h \
+  C:/Qt/6.9.1/mingw_64/include/QtGui/QAction \
   C:/Qt/6.9.1/mingw_64/include/QtGui/qaction.h \
   C:/Qt/6.9.1/mingw_64/include/QtGui/qbitmap.h \
   C:/Qt/6.9.1/mingw_64/include/QtGui/qbrush.h \
@@ -225,12 +231,16 @@ ConfigGUI_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/Qt/6.9.1/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.9.1/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/QComboBox \
+  C:/Qt/6.9.1/mingw_64/include/QtWidgets/QGroupBox \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/QLineEdit \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/QMainWindow \
+  C:/Qt/6.9.1/mingw_64/include/QtWidgets/QMenu \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/QMenuBar \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/QPushButton \
+  C:/Qt/6.9.1/mingw_64/include/QtWidgets/QScrollBar \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/QTextEdit \
+  C:/Qt/6.9.1/mingw_64/include/QtWidgets/QWidget \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qabstractbutton.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qabstractscrollarea.h \
@@ -238,6 +248,7 @@ ConfigGUI_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qabstractspinbox.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qcombobox.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qframe.h \
+  C:/Qt/6.9.1/mingw_64/include/QtWidgets/qgroupbox.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qlabel.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qlineedit.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qmainwindow.h \
@@ -245,6 +256,7 @@ ConfigGUI_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qmenubar.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qpushbutton.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qrubberband.h \
+  C:/Qt/6.9.1/mingw_64/include/QtWidgets/qscrollbar.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qslider.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qstyle.h \
@@ -573,6 +585,7 @@ ConfigGUI_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/msys64/mingw64/include/c++/14.2.0/ext/numeric_traits.h \
   C:/msys64/mingw64/include/c++/14.2.0/ext/string_conversions.h \
   C:/msys64/mingw64/include/c++/14.2.0/ext/type_traits.h \
+  C:/msys64/mingw64/include/c++/14.2.0/filesystem \
   C:/msys64/mingw64/include/c++/14.2.0/functional \
   C:/msys64/mingw64/include/c++/14.2.0/initializer_list \
   C:/msys64/mingw64/include/c++/14.2.0/iosfwd \
@@ -902,8 +915,11 @@ ConfigGUI_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
 
 CMakeFiles/ConfigGUI.dir/ConfigGUI_autogen/mocs_compilation.cpp.obj: ConfigGUI_autogen/mocs_compilation.cpp \
   C:/Qt/6.9.1/mingw_64/include/QtCore/QDateTime \
+  C:/Qt/6.9.1/mingw_64/include/QtCore/QFile \
   C:/Qt/6.9.1/mingw_64/include/QtCore/QObject \
   C:/Qt/6.9.1/mingw_64/include/QtCore/QString \
+  C:/Qt/6.9.1/mingw_64/include/QtCore/QStringList \
+  C:/Qt/6.9.1/mingw_64/include/QtCore/QTextStream \
   C:/Qt/6.9.1/mingw_64/include/QtCore/QTimer \
   C:/Qt/6.9.1/mingw_64/include/QtCore/q17memory.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/q20algorithm.h \
@@ -952,6 +968,8 @@ CMakeFiles/ConfigGUI.dir/ConfigGUI_autogen/mocs_compilation.cpp.obj: ConfigGUI_a
   C:/Qt/6.9.1/mingw_64/include/QtCore/qendian.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qeventloop.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qexceptionhandling.h \
+  C:/Qt/6.9.1/mingw_64/include/QtCore/qfile.h \
+  C:/Qt/6.9.1/mingw_64/include/QtCore/qfiledevice.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qflags.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qfloat16.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qforeach.h \
@@ -1047,6 +1065,7 @@ CMakeFiles/ConfigGUI.dir/ConfigGUI_autogen/mocs_compilation.cpp.obj: ConfigGUI_a
   C:/Qt/6.9.1/mingw_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qxptype_traits.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qyieldcpu.h \
+  C:/Qt/6.9.1/mingw_64/include/QtGui/QAction \
   C:/Qt/6.9.1/mingw_64/include/QtGui/qaction.h \
   C:/Qt/6.9.1/mingw_64/include/QtGui/qbitmap.h \
   C:/Qt/6.9.1/mingw_64/include/QtGui/qbrush.h \
@@ -1081,12 +1100,16 @@ CMakeFiles/ConfigGUI.dir/ConfigGUI_autogen/mocs_compilation.cpp.obj: ConfigGUI_a
   C:/Qt/6.9.1/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.9.1/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/QComboBox \
+  C:/Qt/6.9.1/mingw_64/include/QtWidgets/QGroupBox \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/QLineEdit \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/QMainWindow \
+  C:/Qt/6.9.1/mingw_64/include/QtWidgets/QMenu \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/QMenuBar \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/QPushButton \
+  C:/Qt/6.9.1/mingw_64/include/QtWidgets/QScrollBar \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/QTextEdit \
+  C:/Qt/6.9.1/mingw_64/include/QtWidgets/QWidget \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qabstractbutton.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qabstractscrollarea.h \
@@ -1094,6 +1117,7 @@ CMakeFiles/ConfigGUI.dir/ConfigGUI_autogen/mocs_compilation.cpp.obj: ConfigGUI_a
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qabstractspinbox.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qcombobox.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qframe.h \
+  C:/Qt/6.9.1/mingw_64/include/QtWidgets/qgroupbox.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qlabel.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qlineedit.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qmainwindow.h \
@@ -1101,6 +1125,7 @@ CMakeFiles/ConfigGUI.dir/ConfigGUI_autogen/mocs_compilation.cpp.obj: ConfigGUI_a
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qmenubar.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qpushbutton.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qrubberband.h \
+  C:/Qt/6.9.1/mingw_64/include/QtWidgets/qscrollbar.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qslider.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qstyle.h \
@@ -1142,11 +1167,14 @@ CMakeFiles/ConfigGUI.dir/ConfigGUI_autogen/mocs_compilation.cpp.obj: ConfigGUI_a
   C:/msys64/mingw64/include/c++/14.2.0/bits/allocator.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/atomic_base.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/atomic_lockfree_defines.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/basic_ios.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/basic_ios.tcc \
   C:/msys64/mingw64/include/c++/14.2.0/bits/basic_string.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/basic_string.tcc \
   C:/msys64/mingw64/include/c++/14.2.0/bits/char_traits.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/charconv.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/chrono.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/codecvt.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/concept_check.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/cpp_type_traits.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/cxxabi_forced.h \
@@ -1156,6 +1184,10 @@ CMakeFiles/ConfigGUI.dir/ConfigGUI_autogen/mocs_compilation.cpp.obj: ConfigGUI_a
   C:/msys64/mingw64/include/c++/14.2.0/bits/exception.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/exception_defines.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/exception_ptr.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/fs_dir.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/fs_fwd.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/fs_ops.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/fs_path.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/functexcept.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/functional_hash.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/hash_bytes.h \
@@ -1163,9 +1195,15 @@ CMakeFiles/ConfigGUI.dir/ConfigGUI_autogen/mocs_compilation.cpp.obj: ConfigGUI_a
   C:/msys64/mingw64/include/c++/14.2.0/bits/hashtable_policy.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/invoke.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/ios_base.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/istream.tcc \
   C:/msys64/mingw64/include/c++/14.2.0/bits/list.tcc \
   C:/msys64/mingw64/include/c++/14.2.0/bits/locale_classes.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/locale_classes.tcc \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/locale_conv.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/locale_facets.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/locale_facets.tcc \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/locale_facets_nonio.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/locale_facets_nonio.tcc \
   C:/msys64/mingw64/include/c++/14.2.0/bits/localefwd.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/memory_resource.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/memoryfwd.h \
@@ -1173,11 +1211,13 @@ CMakeFiles/ConfigGUI.dir/ConfigGUI_autogen/mocs_compilation.cpp.obj: ConfigGUI_a
   C:/msys64/mingw64/include/c++/14.2.0/bits/nested_exception.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/new_allocator.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/node_handle.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/ostream.tcc \
   C:/msys64/mingw64/include/c++/14.2.0/bits/ostream_insert.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/parse_numbers.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/postypes.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/predefined_ops.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/ptr_traits.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/quoted_string.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/range_access.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/refwrap.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/requires_hosted.h \
@@ -1185,6 +1225,7 @@ CMakeFiles/ConfigGUI.dir/ConfigGUI_autogen/mocs_compilation.cpp.obj: ConfigGUI_a
   C:/msys64/mingw64/include/c++/14.2.0/bits/shared_ptr_atomic.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/shared_ptr_base.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/specfun.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/sstream.tcc \
   C:/msys64/mingw64/include/c++/14.2.0/bits/std_abs.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/std_function.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/stl_algo.h \
@@ -1230,6 +1271,7 @@ CMakeFiles/ConfigGUI.dir/ConfigGUI_autogen/mocs_compilation.cpp.obj: ConfigGUI_a
   C:/msys64/mingw64/include/c++/14.2.0/climits \
   C:/msys64/mingw64/include/c++/14.2.0/clocale \
   C:/msys64/mingw64/include/c++/14.2.0/cmath \
+  C:/msys64/mingw64/include/c++/14.2.0/codecvt \
   C:/msys64/mingw64/include/c++/14.2.0/compare \
   C:/msys64/mingw64/include/c++/14.2.0/concepts \
   C:/msys64/mingw64/include/c++/14.2.0/cstddef \
@@ -1239,6 +1281,7 @@ CMakeFiles/ConfigGUI.dir/ConfigGUI_autogen/mocs_compilation.cpp.obj: ConfigGUI_a
   C:/msys64/mingw64/include/c++/14.2.0/cstring \
   C:/msys64/mingw64/include/c++/14.2.0/ctime \
   C:/msys64/mingw64/include/c++/14.2.0/cwchar \
+  C:/msys64/mingw64/include/c++/14.2.0/cwctype \
   C:/msys64/mingw64/include/c++/14.2.0/debug/assertions.h \
   C:/msys64/mingw64/include/c++/14.2.0/debug/debug.h \
   C:/msys64/mingw64/include/c++/14.2.0/exception \
@@ -1249,17 +1292,23 @@ CMakeFiles/ConfigGUI.dir/ConfigGUI_autogen/mocs_compilation.cpp.obj: ConfigGUI_a
   C:/msys64/mingw64/include/c++/14.2.0/ext/numeric_traits.h \
   C:/msys64/mingw64/include/c++/14.2.0/ext/string_conversions.h \
   C:/msys64/mingw64/include/c++/14.2.0/ext/type_traits.h \
+  C:/msys64/mingw64/include/c++/14.2.0/filesystem \
   C:/msys64/mingw64/include/c++/14.2.0/functional \
   C:/msys64/mingw64/include/c++/14.2.0/initializer_list \
+  C:/msys64/mingw64/include/c++/14.2.0/iomanip \
+  C:/msys64/mingw64/include/c++/14.2.0/ios \
   C:/msys64/mingw64/include/c++/14.2.0/iosfwd \
+  C:/msys64/mingw64/include/c++/14.2.0/istream \
   C:/msys64/mingw64/include/c++/14.2.0/iterator \
   C:/msys64/mingw64/include/c++/14.2.0/limits \
   C:/msys64/mingw64/include/c++/14.2.0/list \
+  C:/msys64/mingw64/include/c++/14.2.0/locale \
   C:/msys64/mingw64/include/c++/14.2.0/map \
   C:/msys64/mingw64/include/c++/14.2.0/memory \
   C:/msys64/mingw64/include/c++/14.2.0/new \
   C:/msys64/mingw64/include/c++/14.2.0/numeric \
   C:/msys64/mingw64/include/c++/14.2.0/optional \
+  C:/msys64/mingw64/include/c++/14.2.0/ostream \
   C:/msys64/mingw64/include/c++/14.2.0/pstl/execution_defs.h \
   C:/msys64/mingw64/include/c++/14.2.0/pstl/glue_algorithm_defs.h \
   C:/msys64/mingw64/include/c++/14.2.0/pstl/glue_memory_defs.h \
@@ -1267,6 +1316,7 @@ CMakeFiles/ConfigGUI.dir/ConfigGUI_autogen/mocs_compilation.cpp.obj: ConfigGUI_a
   C:/msys64/mingw64/include/c++/14.2.0/pstl/pstl_config.h \
   C:/msys64/mingw64/include/c++/14.2.0/ratio \
   C:/msys64/mingw64/include/c++/14.2.0/set \
+  C:/msys64/mingw64/include/c++/14.2.0/sstream \
   C:/msys64/mingw64/include/c++/14.2.0/stdexcept \
   C:/msys64/mingw64/include/c++/14.2.0/stdlib.h \
   C:/msys64/mingw64/include/c++/14.2.0/streambuf \
@@ -1299,10 +1349,14 @@ CMakeFiles/ConfigGUI.dir/ConfigGUI_autogen/mocs_compilation.cpp.obj: ConfigGUI_a
   C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
   C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++locale.h \
   C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_base.h \
+  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_inline.h \
   C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/error_constants.h \
   C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h \
+  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/messages_members.h \
   C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h \
   C:/msys64/mingw64/include/cderr.h \
   C:/msys64/mingw64/include/cguid.h \
   C:/msys64/mingw64/include/combaseapi.h \
@@ -1449,6 +1503,7 @@ CMakeFiles/ConfigGUI.dir/ConfigGUI_autogen/mocs_compilation.cpp.obj: ConfigGUI_a
   C:/msys64/mingw64/include/vadefs.h \
   C:/msys64/mingw64/include/virtdisk.h \
   C:/msys64/mingw64/include/wchar.h \
+  C:/msys64/mingw64/include/wctype.h \
   C:/msys64/mingw64/include/winapifamily.h \
   C:/msys64/mingw64/include/winbase.h \
   C:/msys64/mingw64/include/wincon.h \
@@ -1592,8 +1647,11 @@ CMakeFiles/ConfigGUI.dir/ConfigGUI_autogen/mocs_compilation.cpp.obj: ConfigGUI_a
 
 CMakeFiles/ConfigGUI.dir/main.cpp.obj: C:/Users/leona/Desktop/config_app/config_app/main.cpp \
   C:/Qt/6.9.1/mingw_64/include/QtCore/QDateTime \
+  C:/Qt/6.9.1/mingw_64/include/QtCore/QFile \
   C:/Qt/6.9.1/mingw_64/include/QtCore/QObject \
   C:/Qt/6.9.1/mingw_64/include/QtCore/QString \
+  C:/Qt/6.9.1/mingw_64/include/QtCore/QStringList \
+  C:/Qt/6.9.1/mingw_64/include/QtCore/QTextStream \
   C:/Qt/6.9.1/mingw_64/include/QtCore/QTimer \
   C:/Qt/6.9.1/mingw_64/include/QtCore/q17memory.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/q20functional.h \
@@ -1643,6 +1701,8 @@ CMakeFiles/ConfigGUI.dir/main.cpp.obj: C:/Users/leona/Desktop/config_app/config_
   C:/Qt/6.9.1/mingw_64/include/QtCore/qendian.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qeventloop.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qexceptionhandling.h \
+  C:/Qt/6.9.1/mingw_64/include/QtCore/qfile.h \
+  C:/Qt/6.9.1/mingw_64/include/QtCore/qfiledevice.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qflags.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qfloat16.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qforeach.h \
@@ -1737,6 +1797,7 @@ CMakeFiles/ConfigGUI.dir/main.cpp.obj: C:/Users/leona/Desktop/config_app/config_
   C:/Qt/6.9.1/mingw_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qxptype_traits.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qyieldcpu.h \
+  C:/Qt/6.9.1/mingw_64/include/QtGui/QAction \
   C:/Qt/6.9.1/mingw_64/include/QtGui/qaction.h \
   C:/Qt/6.9.1/mingw_64/include/QtGui/qbitmap.h \
   C:/Qt/6.9.1/mingw_64/include/QtGui/qbrush.h \
@@ -1775,12 +1836,16 @@ CMakeFiles/ConfigGUI.dir/main.cpp.obj: C:/Users/leona/Desktop/config_app/config_
   C:/Qt/6.9.1/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/QApplication \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/QComboBox \
+  C:/Qt/6.9.1/mingw_64/include/QtWidgets/QGroupBox \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/QLineEdit \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/QMainWindow \
+  C:/Qt/6.9.1/mingw_64/include/QtWidgets/QMenu \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/QMenuBar \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/QPushButton \
+  C:/Qt/6.9.1/mingw_64/include/QtWidgets/QScrollBar \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/QTextEdit \
+  C:/Qt/6.9.1/mingw_64/include/QtWidgets/QWidget \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qabstractbutton.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qabstractscrollarea.h \
@@ -1789,6 +1854,7 @@ CMakeFiles/ConfigGUI.dir/main.cpp.obj: C:/Users/leona/Desktop/config_app/config_
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qapplication.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qcombobox.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qframe.h \
+  C:/Qt/6.9.1/mingw_64/include/QtWidgets/qgroupbox.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qlabel.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qlineedit.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qmainwindow.h \
@@ -1796,6 +1862,7 @@ CMakeFiles/ConfigGUI.dir/main.cpp.obj: C:/Users/leona/Desktop/config_app/config_
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qmenubar.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qpushbutton.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qrubberband.h \
+  C:/Qt/6.9.1/mingw_64/include/QtWidgets/qscrollbar.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qslider.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qstyle.h \
@@ -1835,11 +1902,14 @@ CMakeFiles/ConfigGUI.dir/main.cpp.obj: C:/Users/leona/Desktop/config_app/config_
   C:/msys64/mingw64/include/c++/14.2.0/bits/allocator.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/atomic_base.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/atomic_lockfree_defines.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/basic_ios.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/basic_ios.tcc \
   C:/msys64/mingw64/include/c++/14.2.0/bits/basic_string.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/basic_string.tcc \
   C:/msys64/mingw64/include/c++/14.2.0/bits/char_traits.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/charconv.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/chrono.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/codecvt.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/concept_check.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/cpp_type_traits.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/cxxabi_forced.h \
@@ -1849,6 +1919,10 @@ CMakeFiles/ConfigGUI.dir/main.cpp.obj: C:/Users/leona/Desktop/config_app/config_
   C:/msys64/mingw64/include/c++/14.2.0/bits/exception.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/exception_defines.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/exception_ptr.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/fs_dir.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/fs_fwd.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/fs_ops.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/fs_path.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/functexcept.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/functional_hash.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/hash_bytes.h \
@@ -1856,9 +1930,15 @@ CMakeFiles/ConfigGUI.dir/main.cpp.obj: C:/Users/leona/Desktop/config_app/config_
   C:/msys64/mingw64/include/c++/14.2.0/bits/hashtable_policy.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/invoke.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/ios_base.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/istream.tcc \
   C:/msys64/mingw64/include/c++/14.2.0/bits/list.tcc \
   C:/msys64/mingw64/include/c++/14.2.0/bits/locale_classes.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/locale_classes.tcc \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/locale_conv.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/locale_facets.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/locale_facets.tcc \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/locale_facets_nonio.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/locale_facets_nonio.tcc \
   C:/msys64/mingw64/include/c++/14.2.0/bits/localefwd.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/memory_resource.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/memoryfwd.h \
@@ -1866,11 +1946,13 @@ CMakeFiles/ConfigGUI.dir/main.cpp.obj: C:/Users/leona/Desktop/config_app/config_
   C:/msys64/mingw64/include/c++/14.2.0/bits/nested_exception.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/new_allocator.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/node_handle.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/ostream.tcc \
   C:/msys64/mingw64/include/c++/14.2.0/bits/ostream_insert.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/parse_numbers.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/postypes.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/predefined_ops.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/ptr_traits.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/quoted_string.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/range_access.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/refwrap.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/requires_hosted.h \
@@ -1878,6 +1960,7 @@ CMakeFiles/ConfigGUI.dir/main.cpp.obj: C:/Users/leona/Desktop/config_app/config_
   C:/msys64/mingw64/include/c++/14.2.0/bits/shared_ptr_atomic.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/shared_ptr_base.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/specfun.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/sstream.tcc \
   C:/msys64/mingw64/include/c++/14.2.0/bits/std_abs.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/std_function.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/stl_algo.h \
@@ -1923,6 +2006,7 @@ CMakeFiles/ConfigGUI.dir/main.cpp.obj: C:/Users/leona/Desktop/config_app/config_
   C:/msys64/mingw64/include/c++/14.2.0/climits \
   C:/msys64/mingw64/include/c++/14.2.0/clocale \
   C:/msys64/mingw64/include/c++/14.2.0/cmath \
+  C:/msys64/mingw64/include/c++/14.2.0/codecvt \
   C:/msys64/mingw64/include/c++/14.2.0/compare \
   C:/msys64/mingw64/include/c++/14.2.0/concepts \
   C:/msys64/mingw64/include/c++/14.2.0/cstddef \
@@ -1932,6 +2016,7 @@ CMakeFiles/ConfigGUI.dir/main.cpp.obj: C:/Users/leona/Desktop/config_app/config_
   C:/msys64/mingw64/include/c++/14.2.0/cstring \
   C:/msys64/mingw64/include/c++/14.2.0/ctime \
   C:/msys64/mingw64/include/c++/14.2.0/cwchar \
+  C:/msys64/mingw64/include/c++/14.2.0/cwctype \
   C:/msys64/mingw64/include/c++/14.2.0/debug/assertions.h \
   C:/msys64/mingw64/include/c++/14.2.0/debug/debug.h \
   C:/msys64/mingw64/include/c++/14.2.0/exception \
@@ -1942,17 +2027,23 @@ CMakeFiles/ConfigGUI.dir/main.cpp.obj: C:/Users/leona/Desktop/config_app/config_
   C:/msys64/mingw64/include/c++/14.2.0/ext/numeric_traits.h \
   C:/msys64/mingw64/include/c++/14.2.0/ext/string_conversions.h \
   C:/msys64/mingw64/include/c++/14.2.0/ext/type_traits.h \
+  C:/msys64/mingw64/include/c++/14.2.0/filesystem \
   C:/msys64/mingw64/include/c++/14.2.0/functional \
   C:/msys64/mingw64/include/c++/14.2.0/initializer_list \
+  C:/msys64/mingw64/include/c++/14.2.0/iomanip \
+  C:/msys64/mingw64/include/c++/14.2.0/ios \
   C:/msys64/mingw64/include/c++/14.2.0/iosfwd \
+  C:/msys64/mingw64/include/c++/14.2.0/istream \
   C:/msys64/mingw64/include/c++/14.2.0/iterator \
   C:/msys64/mingw64/include/c++/14.2.0/limits \
   C:/msys64/mingw64/include/c++/14.2.0/list \
+  C:/msys64/mingw64/include/c++/14.2.0/locale \
   C:/msys64/mingw64/include/c++/14.2.0/map \
   C:/msys64/mingw64/include/c++/14.2.0/memory \
   C:/msys64/mingw64/include/c++/14.2.0/new \
   C:/msys64/mingw64/include/c++/14.2.0/numeric \
   C:/msys64/mingw64/include/c++/14.2.0/optional \
+  C:/msys64/mingw64/include/c++/14.2.0/ostream \
   C:/msys64/mingw64/include/c++/14.2.0/pstl/execution_defs.h \
   C:/msys64/mingw64/include/c++/14.2.0/pstl/glue_algorithm_defs.h \
   C:/msys64/mingw64/include/c++/14.2.0/pstl/glue_memory_defs.h \
@@ -1960,6 +2051,7 @@ CMakeFiles/ConfigGUI.dir/main.cpp.obj: C:/Users/leona/Desktop/config_app/config_
   C:/msys64/mingw64/include/c++/14.2.0/pstl/pstl_config.h \
   C:/msys64/mingw64/include/c++/14.2.0/ratio \
   C:/msys64/mingw64/include/c++/14.2.0/set \
+  C:/msys64/mingw64/include/c++/14.2.0/sstream \
   C:/msys64/mingw64/include/c++/14.2.0/stdexcept \
   C:/msys64/mingw64/include/c++/14.2.0/stdlib.h \
   C:/msys64/mingw64/include/c++/14.2.0/streambuf \
@@ -1992,10 +2084,14 @@ CMakeFiles/ConfigGUI.dir/main.cpp.obj: C:/Users/leona/Desktop/config_app/config_
   C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
   C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++locale.h \
   C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_base.h \
+  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_inline.h \
   C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/error_constants.h \
   C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h \
+  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/messages_members.h \
   C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h \
   C:/msys64/mingw64/include/cderr.h \
   C:/msys64/mingw64/include/cguid.h \
   C:/msys64/mingw64/include/combaseapi.h \
@@ -2142,6 +2238,7 @@ CMakeFiles/ConfigGUI.dir/main.cpp.obj: C:/Users/leona/Desktop/config_app/config_
   C:/msys64/mingw64/include/vadefs.h \
   C:/msys64/mingw64/include/virtdisk.h \
   C:/msys64/mingw64/include/wchar.h \
+  C:/msys64/mingw64/include/wctype.h \
   C:/msys64/mingw64/include/winapifamily.h \
   C:/msys64/mingw64/include/winbase.h \
   C:/msys64/mingw64/include/wincon.h \
@@ -2285,13 +2382,18 @@ CMakeFiles/ConfigGUI.dir/main.cpp.obj: C:/Users/leona/Desktop/config_app/config_
 
 CMakeFiles/ConfigGUI.dir/mainwindow.cpp.obj: C:/Users/leona/Desktop/config_app/config_app/mainwindow.cpp \
   C:/Qt/6.9.1/mingw_64/include/QtCore/QDateTime \
+  C:/Qt/6.9.1/mingw_64/include/QtCore/QDir \
+  C:/Qt/6.9.1/mingw_64/include/QtCore/QFile \
   C:/Qt/6.9.1/mingw_64/include/QtCore/QList \
   C:/Qt/6.9.1/mingw_64/include/QtCore/QObject \
   C:/Qt/6.9.1/mingw_64/include/QtCore/QRect \
   C:/Qt/6.9.1/mingw_64/include/QtCore/QRegularExpression \
   C:/Qt/6.9.1/mingw_64/include/QtCore/QSize \
   C:/Qt/6.9.1/mingw_64/include/QtCore/QSizeF \
+  C:/Qt/6.9.1/mingw_64/include/QtCore/QStandardPaths \
   C:/Qt/6.9.1/mingw_64/include/QtCore/QString \
+  C:/Qt/6.9.1/mingw_64/include/QtCore/QStringList \
+  C:/Qt/6.9.1/mingw_64/include/QtCore/QTextStream \
   C:/Qt/6.9.1/mingw_64/include/QtCore/QTimer \
   C:/Qt/6.9.1/mingw_64/include/QtCore/q17memory.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/q20functional.h \
@@ -2337,10 +2439,15 @@ CMakeFiles/ConfigGUI.dir/mainwindow.cpp.obj: C:/Users/leona/Desktop/config_app/c
   C:/Qt/6.9.1/mingw_64/include/QtCore/qdatetime.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qdeadlinetimer.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qdebug.h \
+  C:/Qt/6.9.1/mingw_64/include/QtCore/qdir.h \
+  C:/Qt/6.9.1/mingw_64/include/QtCore/qdirlisting.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qelapsedtimer.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qendian.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qeventloop.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qexceptionhandling.h \
+  C:/Qt/6.9.1/mingw_64/include/QtCore/qfile.h \
+  C:/Qt/6.9.1/mingw_64/include/QtCore/qfiledevice.h \
+  C:/Qt/6.9.1/mingw_64/include/QtCore/qfileinfo.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qflags.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qfloat16.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qforeach.h \
@@ -2390,6 +2497,7 @@ CMakeFiles/ConfigGUI.dir/mainwindow.cpp.obj: C:/Users/leona/Desktop/config_app/c
   C:/Qt/6.9.1/mingw_64/include/QtCore/qsharedpointer_impl.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qsize.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qspan.h \
+  C:/Qt/6.9.1/mingw_64/include/QtCore/qstandardpaths.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qstdlibdetection.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qstring.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qstringalgorithms.h \
@@ -2418,6 +2526,7 @@ CMakeFiles/ConfigGUI.dir/mainwindow.cpp.obj: C:/Users/leona/Desktop/config_app/c
   C:/Qt/6.9.1/mingw_64/include/QtCore/qtextstream.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qtformat_impl.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qtimer.h \
+  C:/Qt/6.9.1/mingw_64/include/QtCore/qtimezone.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qtmetamacros.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qtnoop.h \
   C:/Qt/6.9.1/mingw_64/include/QtCore/qtpreprocessorsupport.h \
@@ -2496,6 +2605,7 @@ CMakeFiles/ConfigGUI.dir/mainwindow.cpp.obj: C:/Users/leona/Desktop/config_app/c
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/QScrollBar \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/QTextEdit \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/QVBoxLayout \
+  C:/Qt/6.9.1/mingw_64/include/QtWidgets/QWidget \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qabstractbutton.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
   C:/Qt/6.9.1/mingw_64/include/QtWidgets/qabstractscrollarea.h \
@@ -2559,11 +2669,14 @@ CMakeFiles/ConfigGUI.dir/mainwindow.cpp.obj: C:/Users/leona/Desktop/config_app/c
   C:/msys64/mingw64/include/c++/14.2.0/bits/allocator.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/atomic_base.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/atomic_lockfree_defines.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/basic_ios.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/basic_ios.tcc \
   C:/msys64/mingw64/include/c++/14.2.0/bits/basic_string.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/basic_string.tcc \
   C:/msys64/mingw64/include/c++/14.2.0/bits/char_traits.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/charconv.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/chrono.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/codecvt.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/concept_check.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/cpp_type_traits.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/cxxabi_forced.h \
@@ -2573,6 +2686,10 @@ CMakeFiles/ConfigGUI.dir/mainwindow.cpp.obj: C:/Users/leona/Desktop/config_app/c
   C:/msys64/mingw64/include/c++/14.2.0/bits/exception.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/exception_defines.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/exception_ptr.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/fs_dir.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/fs_fwd.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/fs_ops.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/fs_path.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/functexcept.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/functional_hash.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/hash_bytes.h \
@@ -2580,9 +2697,15 @@ CMakeFiles/ConfigGUI.dir/mainwindow.cpp.obj: C:/Users/leona/Desktop/config_app/c
   C:/msys64/mingw64/include/c++/14.2.0/bits/hashtable_policy.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/invoke.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/ios_base.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/istream.tcc \
   C:/msys64/mingw64/include/c++/14.2.0/bits/list.tcc \
   C:/msys64/mingw64/include/c++/14.2.0/bits/locale_classes.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/locale_classes.tcc \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/locale_conv.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/locale_facets.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/locale_facets.tcc \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/locale_facets_nonio.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/locale_facets_nonio.tcc \
   C:/msys64/mingw64/include/c++/14.2.0/bits/localefwd.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/memory_resource.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/memoryfwd.h \
@@ -2590,11 +2713,13 @@ CMakeFiles/ConfigGUI.dir/mainwindow.cpp.obj: C:/Users/leona/Desktop/config_app/c
   C:/msys64/mingw64/include/c++/14.2.0/bits/nested_exception.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/new_allocator.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/node_handle.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/ostream.tcc \
   C:/msys64/mingw64/include/c++/14.2.0/bits/ostream_insert.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/parse_numbers.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/postypes.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/predefined_ops.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/ptr_traits.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/quoted_string.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/range_access.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/refwrap.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/requires_hosted.h \
@@ -2602,6 +2727,7 @@ CMakeFiles/ConfigGUI.dir/mainwindow.cpp.obj: C:/Users/leona/Desktop/config_app/c
   C:/msys64/mingw64/include/c++/14.2.0/bits/shared_ptr_atomic.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/shared_ptr_base.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/specfun.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/sstream.tcc \
   C:/msys64/mingw64/include/c++/14.2.0/bits/std_abs.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/std_function.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/stl_algo.h \
@@ -2647,6 +2773,7 @@ CMakeFiles/ConfigGUI.dir/mainwindow.cpp.obj: C:/Users/leona/Desktop/config_app/c
   C:/msys64/mingw64/include/c++/14.2.0/climits \
   C:/msys64/mingw64/include/c++/14.2.0/clocale \
   C:/msys64/mingw64/include/c++/14.2.0/cmath \
+  C:/msys64/mingw64/include/c++/14.2.0/codecvt \
   C:/msys64/mingw64/include/c++/14.2.0/compare \
   C:/msys64/mingw64/include/c++/14.2.0/concepts \
   C:/msys64/mingw64/include/c++/14.2.0/cstddef \
@@ -2656,6 +2783,7 @@ CMakeFiles/ConfigGUI.dir/mainwindow.cpp.obj: C:/Users/leona/Desktop/config_app/c
   C:/msys64/mingw64/include/c++/14.2.0/cstring \
   C:/msys64/mingw64/include/c++/14.2.0/ctime \
   C:/msys64/mingw64/include/c++/14.2.0/cwchar \
+  C:/msys64/mingw64/include/c++/14.2.0/cwctype \
   C:/msys64/mingw64/include/c++/14.2.0/debug/assertions.h \
   C:/msys64/mingw64/include/c++/14.2.0/debug/debug.h \
   C:/msys64/mingw64/include/c++/14.2.0/exception \
@@ -2666,17 +2794,23 @@ CMakeFiles/ConfigGUI.dir/mainwindow.cpp.obj: C:/Users/leona/Desktop/config_app/c
   C:/msys64/mingw64/include/c++/14.2.0/ext/numeric_traits.h \
   C:/msys64/mingw64/include/c++/14.2.0/ext/string_conversions.h \
   C:/msys64/mingw64/include/c++/14.2.0/ext/type_traits.h \
+  C:/msys64/mingw64/include/c++/14.2.0/filesystem \
   C:/msys64/mingw64/include/c++/14.2.0/functional \
   C:/msys64/mingw64/include/c++/14.2.0/initializer_list \
+  C:/msys64/mingw64/include/c++/14.2.0/iomanip \
+  C:/msys64/mingw64/include/c++/14.2.0/ios \
   C:/msys64/mingw64/include/c++/14.2.0/iosfwd \
+  C:/msys64/mingw64/include/c++/14.2.0/istream \
   C:/msys64/mingw64/include/c++/14.2.0/iterator \
   C:/msys64/mingw64/include/c++/14.2.0/limits \
   C:/msys64/mingw64/include/c++/14.2.0/list \
+  C:/msys64/mingw64/include/c++/14.2.0/locale \
   C:/msys64/mingw64/include/c++/14.2.0/map \
   C:/msys64/mingw64/include/c++/14.2.0/memory \
   C:/msys64/mingw64/include/c++/14.2.0/new \
   C:/msys64/mingw64/include/c++/14.2.0/numeric \
   C:/msys64/mingw64/include/c++/14.2.0/optional \
+  C:/msys64/mingw64/include/c++/14.2.0/ostream \
   C:/msys64/mingw64/include/c++/14.2.0/pstl/execution_defs.h \
   C:/msys64/mingw64/include/c++/14.2.0/pstl/glue_algorithm_defs.h \
   C:/msys64/mingw64/include/c++/14.2.0/pstl/glue_memory_defs.h \
@@ -2684,6 +2818,7 @@ CMakeFiles/ConfigGUI.dir/mainwindow.cpp.obj: C:/Users/leona/Desktop/config_app/c
   C:/msys64/mingw64/include/c++/14.2.0/pstl/pstl_config.h \
   C:/msys64/mingw64/include/c++/14.2.0/ratio \
   C:/msys64/mingw64/include/c++/14.2.0/set \
+  C:/msys64/mingw64/include/c++/14.2.0/sstream \
   C:/msys64/mingw64/include/c++/14.2.0/stdexcept \
   C:/msys64/mingw64/include/c++/14.2.0/stdlib.h \
   C:/msys64/mingw64/include/c++/14.2.0/streambuf \
@@ -2716,10 +2851,14 @@ CMakeFiles/ConfigGUI.dir/mainwindow.cpp.obj: C:/Users/leona/Desktop/config_app/c
   C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
   C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++locale.h \
   C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_base.h \
+  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_inline.h \
   C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/error_constants.h \
   C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h \
+  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/messages_members.h \
   C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h \
   C:/msys64/mingw64/include/cderr.h \
   C:/msys64/mingw64/include/cguid.h \
   C:/msys64/mingw64/include/combaseapi.h \
@@ -2866,6 +3005,7 @@ CMakeFiles/ConfigGUI.dir/mainwindow.cpp.obj: C:/Users/leona/Desktop/config_app/c
   C:/msys64/mingw64/include/vadefs.h \
   C:/msys64/mingw64/include/virtdisk.h \
   C:/msys64/mingw64/include/wchar.h \
+  C:/msys64/mingw64/include/wctype.h \
   C:/msys64/mingw64/include/winapifamily.h \
   C:/msys64/mingw64/include/winbase.h \
   C:/msys64/mingw64/include/wincon.h \
@@ -3619,9 +3759,13 @@ C:/Program\ Files/CMake/share/cmake-4.1/Modules/CMakeCXXInformation.cmake:
 
 C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake:
 
+C:/Qt/6.9.1/mingw_64/include/QtCore/QTextStream:
+
 C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake:
 
 C:/Qt/6.9.1/mingw_64/include/QtCore/q20memory.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/fs_dir.h:
 
 C:/Program\ Files/CMake/share/cmake-4.1/Modules/CMakeCInformation.cmake:
 
@@ -3648,6 +3792,8 @@ C:/Qt/6.9.1/mingw_64/include/QtCore/q20type_traits.h:
 C:/Program\ Files/CMake/share/cmake-4.1/Modules/CMakeLanguageInformation.cmake:
 
 C:/Qt/6.9.1/mingw_64/include/QtCore/qcontiguouscache.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/locale_facets_nonio.h:
 
 C:/Program\ Files/CMake/share/cmake-4.1/Modules/CheckCXXSourceCompiles.cmake:
 
@@ -3693,6 +3839,8 @@ C:/Qt/6.9.1/mingw_64/include/QtCore/q17memory.h:
 
 C:/Qt/6.9.1/mingw_64/include/QtCore/qarraydataops.h:
 
+C:/Qt/6.9.1/mingw_64/include/QtCore/QStringList:
+
 C:/msys64/mingw64/include/c++/14.2.0/bits/predefined_ops.h:
 
 C:/msys64/mingw64/include/guiddef.h:
@@ -3719,11 +3867,11 @@ C:/Program\ Files/CMake/share/cmake-4.1/Modules/CheckLibraryExists.cmake:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/hashtable.h:
 
-C:/Qt/6.9.1/mingw_64/include/QtWidgets/QGroupBox:
-
 C:/msys64/mingw64/include/sys/timeb.h:
 
 C:/Qt/6.9.1/mingw_64/include/QtCore/q20iterator.h:
+
+C:/Qt/6.9.1/mingw_64/include/QtWidgets/QGroupBox:
 
 C:/Program\ Files/CMake/share/cmake-4.1/Modules/Internal/CMakeCommonLinkerInformation.cmake:
 
@@ -3795,12 +3943,6 @@ C:/Qt/6.9.1/mingw_64/include/QtWidgets/qtwidgetsexports.h:
 
 C:/Program\ Files/CMake/share/cmake-4.1/Modules/Internal/CheckCompilerFlag.cmake:
 
-C:/msys64/mingw64/include/c++/14.2.0/bits/stl_heap.h:
-
-C:/Qt/6.9.1/mingw_64/include/QtCore/qalgorithms.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/exception_defines.h:
-
 C:/msys64/mingw64/include/c++/14.2.0/bits/erase_if.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/unordered_set:
@@ -3869,11 +4011,19 @@ C:/Qt/6.9.1/mingw_64/include/QtCore/qabstracteventdispatcher.h:
 
 C:/Program\ Files/CMake/share/cmake-4.1/Modules/Platform/Windows-GNU.cmake:
 
-C:/Qt/6.9.1/mingw_64/include/QtGui/QAction:
-
 C:/Program\ Files/CMake/share/cmake-4.1/Modules/Platform/WindowsPaths.cmake:
 
+C:/Qt/6.9.1/mingw_64/include/QtGui/QAction:
+
 C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake:
+
+C:/Qt/6.9.1/mingw_64/include/QtCore/q20utility.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/ostream:
+
+C:/Qt/6.9.1/mingw_64/include/QtCore/QFile:
+
+C:/Qt/6.9.1/mingw_64/include/QtCore/qstringtokenizer.h:
 
 C:/msys64/mingw64/include/stdlib.h:
 
@@ -3883,9 +4033,15 @@ C:/Qt/6.9.1/mingw_64/include/QtCore/QString:
 
 C:/Qt/6.9.1/mingw_64/include/QtCore/q20functional.h:
 
-C:/Qt/6.9.1/mingw_64/include/QtCore/q20utility.h:
-
 C:/Qt/6.9.1/mingw_64/include/QtCore/qabstractitemmodel.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/filesystem:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/stl_heap.h:
+
+C:/Qt/6.9.1/mingw_64/include/QtCore/qalgorithms.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/exception_defines.h:
 
 C:/Qt/6.9.1/mingw_64/include/QtCore/qanystringview.h:
 
@@ -4031,6 +4187,14 @@ C:/Qt/6.9.1/mingw_64/include/QtCore/qexceptionhandling.h:
 
 C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginAdditionalTargetInfo.cmake:
 
+C:/Qt/6.9.1/mingw_64/include/QtCore/qfile.h:
+
+C:/Qt/6.9.1/mingw_64/include/QtCore/qfiledevice.h:
+
+C:/Qt/6.9.1/mingw_64/include/QtCore/qmap.h:
+
+C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-relwithdebinfo.cmake:
+
 C:/Qt/6.9.1/mingw_64/include/QtCore/qflags.h:
 
 C:/Qt/6.9.1/mingw_64/include/QtWidgets/qabstractslider.h:
@@ -4067,13 +4231,13 @@ C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginAdditi
 
 C:/msys64/mingw64/include/oleidl.h:
 
+C:/msys64/mingw64/include/c++/14.2.0/bits/requires_hosted.h:
+
 C:/Qt/6.9.1/mingw_64/include/QtCore/qiterable.h:
 
 C:/Qt/6.9.1/mingw_64/include/QtCore/qset.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/hash_bytes.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/requires_hosted.h:
 
 C:/Qt/6.9.1/mingw_64/include/QtGui/qeventpoint.h:
 
@@ -4093,6 +4257,8 @@ C:/Qt/6.9.1/mingw_64/include/QtCore/qlist.h:
 
 C:/Qt/6.9.1/mingw_64/include/QtWidgets/qstyleoption.h:
 
+C:/msys64/mingw64/include/c++/14.2.0/cwctype:
+
 C:/Qt/6.9.1/mingw_64/include/QtCore/qtcoreexports.h:
 
 C:/Qt/6.9.1/mingw_64/include/QtCore/qtmetamacros.h:
@@ -4108,10 +4274,6 @@ C:/msys64/mingw64/include/basetsd.h:
 C:/Qt/6.9.1/mingw_64/include/QtCore/qmalloc.h:
 
 C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake:
-
-C:/Qt/6.9.1/mingw_64/include/QtCore/qmap.h:
-
-C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-relwithdebinfo.cmake:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h:
 
@@ -4156,8 +4318,6 @@ C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake:
 C:/msys64/mingw64/include/c++/14.2.0/iterator:
 
 C:/Qt/6.9.1/mingw_64/include/QtCore/qobjectdefs.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/shared_ptr_base.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/lwpintrin.h:
 
@@ -4259,8 +4419,6 @@ C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6CorePrivate/Qt6CorePrivateTargets.cmake:
 
 C:/Qt/6.9.1/mingw_64/include/QtCore/qstringmatcher.h:
 
-C:/Qt/6.9.1/mingw_64/include/QtCore/qstringtokenizer.h:
-
 C:/Qt/6.9.1/mingw_64/include/QtCore/qtextstream.h:
 
 C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginConfig.cmake:
@@ -4279,6 +4437,8 @@ C:/Qt/6.9.1/mingw_64/include/QtCore/qtclasshelpermacros.h:
 
 C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:
 
+C:/msys64/mingw64/include/c++/14.2.0/istream:
+
 C:/Qt/6.9.1/mingw_64/include/QtCore/qtconfiginclude.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/shaintrin.h:
@@ -4294,6 +4454,8 @@ C:/Qt/6.9.1/mingw_64/include/QtCore/qtcore-config.h:
 C:/Qt/6.9.1/mingw_64/include/QtCore/qtcoreglobal.h:
 
 C:/Qt/6.9.1/mingw_64/include/QtCore/qtdeprecationdefinitions.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/fs_path.h:
 
 C:/Qt/6.9.1/mingw_64/include/QtCore/qtdeprecationmarkers.h:
 
@@ -4397,6 +4559,8 @@ C:/Qt/6.9.1/mingw_64/include/QtGui/qcursor.h:
 
 C:/Qt/6.9.1/mingw_64/include/QtGui/qvectornd.h:
 
+C:/Qt/6.9.1/mingw_64/include/QtCore/qstandardpaths.h:
+
 C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake:
 
 C:/Qt/6.9.1/mingw_64/include/QtGui/qfont.h:
@@ -4453,10 +4617,6 @@ C:/Qt/6.9.1/mingw_64/include/QtGui/qtextformat.h:
 
 C:/Qt/6.9.1/mingw_64/include/QtGui/qtextoption.h:
 
-C:/msys64/mingw64/include/c++/14.2.0/cstdint:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/std_abs.h:
-
 C:/Qt/6.9.1/mingw_64/include/QtGui/qtgui-config.h:
 
 C:/Qt/6.9.1/mingw_64/include/QtGui/qtguiglobal.h:
@@ -4487,9 +4647,25 @@ C:/msys64/mingw64/include/psdk_inc/_wsa_errnos.h:
 
 C:/Qt/6.9.1/mingw_64/include/QtWidgets/QMainWindow:
 
+C:/Qt/6.9.1/mingw_64/include/QtWidgets/qslider.h:
+
+C:/Qt/6.9.1/mingw_64/include/QtWidgets/QMenu:
+
 C:/Qt/6.9.1/mingw_64/include/QtWidgets/QMenuBar:
 
+C:/Qt/6.9.1/mingw_64/include/QtWidgets/QScrollBar:
+
 C:/Qt/6.9.1/mingw_64/include/QtWidgets/QTextEdit:
+
+C:/msys64/mingw64/include/stdarg.h:
+
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmivlintrin.h:
+
+C:/msys64/mingw64/include/sysinfoapi.h:
+
+C:/Qt/6.9.1/mingw_64/include/QtWidgets/QWidget:
+
+C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6/QtPublicSbomHelpers.cmake:
 
 C:/Qt/6.9.1/mingw_64/include/QtWidgets/qabstractitemdelegate.h:
 
@@ -4504,6 +4680,10 @@ C:/msys64/mingw64/include/objbase.h:
 C:/Qt/6.9.1/mingw_64/include/QtWidgets/qabstractspinbox.h:
 
 C:/Qt/6.9.1/mingw_64/include/QtWidgets/qframe.h:
+
+C:/Qt/6.9.1/mingw_64/include/QtWidgets/qgroupbox.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/fs_ops.h:
 
 C:/Qt/6.9.1/mingw_64/include/QtWidgets/qlabel.h:
 
@@ -4523,9 +4703,15 @@ C:/msys64/mingw64/include/string.h:
 
 C:/Qt/6.9.1/mingw_64/include/QtWidgets/qpushbutton.h:
 
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/emmintrin.h:
+
+C:/msys64/mingw64/include/sec_api/stralign_s.h:
+
+C:/Qt/6.9.1/mingw_64/include/QtWidgets/qscrollbar.h:
+
 C:/Qt/6.9.1/mingw_64/include/QtWidgets/qsizepolicy.h:
 
-C:/Qt/6.9.1/mingw_64/include/QtWidgets/qslider.h:
+C:/msys64/mingw64/include/c++/14.2.0/codecvt:
 
 C:/msys64/mingw64/include/psdk_inc/_wsadata.h:
 
@@ -4551,8 +4737,6 @@ C:/Qt/6.9.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h:
 
 C:/Qt/6.9.1/mingw_64/include/QtWidgets/qwidget.h:
 
-C:/msys64/mingw64/include/c++/14.2.0/bits/std_function.h:
-
 C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:
 
 C:/msys64/mingw64/include/wincrypt.h:
@@ -4562,6 +4746,8 @@ C:/msys64/mingw64/include/shellapi.h:
 C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6/Qt6Config.cmake:
 
 C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6/Qt6ConfigExtras.cmake:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/sstream.tcc:
 
 C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake:
 
@@ -4607,6 +4793,8 @@ C:/msys64/mingw64/include/msxml.h:
 
 C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6/QtPublicAndroidHelpers.cmake:
 
+C:/Qt/6.9.1/mingw_64/include/QtCore/QStandardPaths:
+
 C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6/QtPublicAppleHelpers.cmake:
 
 C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake:
@@ -4646,14 +4834,6 @@ C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6/QtPublicSbomDepHelpers.cmake:
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vlintrin.h:
 
 C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6/QtPublicSbomFileHelpers.cmake:
-
-C:/msys64/mingw64/include/stdarg.h:
-
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmivlintrin.h:
-
-C:/msys64/mingw64/include/sysinfoapi.h:
-
-C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6/QtPublicSbomHelpers.cmake:
 
 C:/msys64/mingw64/include/errno.h:
 
@@ -4729,6 +4909,8 @@ C:/msys64/mingw64/include/c++/14.2.0/bits/hashtable_policy.h:
 
 C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfigVersionImpl.cmake:
 
+C:/Qt/6.9.1/mingw_64/include/QtCore/qfileinfo.h:
+
 C:/msys64/mingw64/include/namespaceapi.h:
 
 C:/msys64/mingw64/include/imm.h:
@@ -4748,6 +4930,8 @@ C:/Qt/6.9.1/mingw_64/include/QtCore/QSize:
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniintrin.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/functexcept.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/fs_fwd.h:
 
 C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiPlugins.cmake:
 
@@ -4797,9 +4981,9 @@ C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginAdditionalTa
 
 C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateConfigVersion.cmake:
 
-C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets-relwithdebinfo.cmake:
-
 C:/msys64/mingw64/include/c++/14.2.0/bits/shared_ptr_atomic.h:
+
+C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets-relwithdebinfo.cmake:
 
 C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets.cmake:
 
@@ -4891,10 +5075,6 @@ C:/Users/leona/Desktop/config_app/config_app/CMakeLists.txt:
 
 CMakeFiles/4.1.0-rc4/CMakeCXXCompiler.cmake:
 
-C:/msys64/mingw64/include/urlmon.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/shared_ptr.h:
-
 C:/Users/leona/Desktop/config_app/config_app/main.cpp:
 
 C:/msys64/mingw64/include/winscard.h:
@@ -4943,9 +5123,7 @@ C:/msys64/mingw64/include/c++/14.2.0/bits/exception_ptr.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/functional_hash.h:
 
-C:/msys64/mingw64/include/mciapi.h:
-
-C:/msys64/mingw64/include/c++/14.2.0/bits/range_access.h:
+C:/msys64/mingw64/include/c++/14.2.0/bits/basic_ios.tcc:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/lzcntintrin.h:
 
@@ -4959,6 +5137,8 @@ C:/msys64/mingw64/include/c++/14.2.0/bits/locale_classes.tcc:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/memory_resource.h:
 
+C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/messages_members.h:
+
 C:/msys64/mingw64/include/c++/14.2.0/bits/memoryfwd.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/prfchwintrin.h:
@@ -4971,11 +5151,27 @@ C:/msys64/mingw64/include/c++/14.2.0/bits/postypes.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/ptr_traits.h:
 
+C:/msys64/mingw64/include/mciapi.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/range_access.h:
+
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniint16intrin.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/refwrap.h:
 
+C:/msys64/mingw64/include/urlmon.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/shared_ptr.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/shared_ptr_base.h:
+
 C:/msys64/mingw64/include/c++/14.2.0/bits/specfun.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/cstdint:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/std_abs.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/std_function.h:
 
 C:/Qt/6.9.1/mingw_64/include/QtCore/q23type_traits.h:
 
@@ -4996,6 +5192,8 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/ammintrin.h:
 C:/msys64/mingw64/include/c++/14.2.0/bits/stl_iterator_base_types.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/stl_list.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/codecvt.h:
 
 C:/msys64/mingw64/include/wtypesbase.h:
 
@@ -5179,6 +5377,8 @@ C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h:
 
+C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_inline.h:
+
 C:/msys64/mingw64/include/cguid.h:
 
 C:/msys64/mingw64/include/combaseapi.h:
@@ -5303,12 +5503,6 @@ C:/msys64/mingw64/include/rpc.h:
 
 C:/msys64/mingw64/include/sched.h:
 
-C:/Qt/6.9.1/mingw_64/include/QtWidgets/qscrollbar.h:
-
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/emmintrin.h:
-
-C:/msys64/mingw64/include/sec_api/stralign_s.h:
-
 C:/msys64/mingw64/include/sec_api/wchar_s.h:
 
 C:/msys64/mingw64/include/securityappcontainer.h:
@@ -5367,6 +5561,8 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxfp16intrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxint8intrin.h:
 
+C:/msys64/mingw64/include/c++/14.2.0/bits/locale_facets.tcc:
+
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mmintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bf16vlintrin.h:
@@ -5392,6 +5588,8 @@ C:/Qt/6.9.1/mingw_64/include/QtWidgets/QApplication:
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmi2vlintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vlbwintrin.h:
+
+C:/Qt/6.9.1/mingw_64/include/QtCore/qdirlisting.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vldqintrin.h:
 
@@ -5471,17 +5669,51 @@ C:/Qt/6.9.1/mingw_64/include/QtCore/qtmochelpers.h:
 
 C:/msys64/mingw64/include/_mingw_stdarg.h:
 
+C:/msys64/mingw64/include/c++/14.2.0/bits/basic_ios.h:
+
+C:/Qt/6.9.1/mingw_64/include/QtCore/qdir.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/istream.tcc:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/locale_conv.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/locale_facets.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/locale_facets_nonio.tcc:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/ostream.tcc:
+
+C:/msys64/mingw64/include/c++/14.2.0/bits/quoted_string.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/iomanip:
+
+C:/msys64/mingw64/include/c++/14.2.0/ios:
+
+C:/msys64/mingw64/include/c++/14.2.0/locale:
+
+C:/Qt/6.9.1/mingw_64/include/QtCore/qtimezone.h:
+
 C:/msys64/mingw64/include/c++/14.2.0/pstl/glue_memory_defs.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/pstl/pstl_config.h:
 
+C:/msys64/mingw64/include/c++/14.2.0/sstream:
+
 C:/msys64/mingw64/include/c++/14.2.0/version:
 
+C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_base.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h:
+
 C:/msys64/mingw64/include/sec_api/stdlib_s.h:
+
+C:/msys64/mingw64/include/wctype.h:
 
 ConfigGUI_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 
 ConfigGUI_autogen/EWIEGA46WW/moc_serialport.cpp:
+
+C:/Qt/6.9.1/mingw_64/include/QtCore/QDir:
 
 C:/Qt/6.9.1/mingw_64/include/QtGui/QTransform:
 
@@ -5489,18 +5721,12 @@ C:/Qt/6.9.1/mingw_64/include/QtGui/qevent.h:
 
 C:/Qt/6.9.1/mingw_64/include/QtGui/qpointingdevice.h:
 
-C:/Qt/6.9.1/mingw_64/include/QtWidgets/QMenu:
-
 C:/Qt/6.9.1/mingw_64/include/QtWidgets/QMessageBox:
-
-C:/Qt/6.9.1/mingw_64/include/QtWidgets/QScrollBar:
 
 C:/Qt/6.9.1/mingw_64/include/QtWidgets/qboxlayout.h:
 
 C:/Qt/6.9.1/mingw_64/include/QtWidgets/qdialog.h:
 
 C:/Qt/6.9.1/mingw_64/include/QtWidgets/qgridlayout.h:
-
-C:/Qt/6.9.1/mingw_64/include/QtWidgets/qgroupbox.h:
 
 C:/Qt/6.9.1/mingw_64/include/QtWidgets/qlayoutitem.h:

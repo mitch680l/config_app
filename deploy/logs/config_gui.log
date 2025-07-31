@@ -1,0 +1,161 @@
+=== Configuration GUI Log Started: 2025-07-30 21:57:29 ===
+21:57:29.237 [INFO] Configuration GUI v1.0
+21:57:29.237 [INFO] Ready for serial communication
+21:57:29.237 [INFO] Using Nordic serial terminal patterns
+21:57:29.237 [INFO] COM9 for both read and write operations
+21:57:34.529 Connected to COM9 at 115200 baud
+21:57:34.529 [INFO] Nordic terminal ready for commands
+21:57:35.165 [24.121,124] <wrn> Partial buffer overflow, resetting
+
+21:57:35.204 [24.160,614] <inf> Acquiring fix... (0, 0)
+
+21:57:38.609 [27.563,415] <wrn> Partial buffer overflow, resetting
+
+21:57:38.770 [27.723,480] <inf> Acquiring fix... (0, 0)
+
+21:57:39.050 [28.003,143] <wrn> MQTT or LTE not 0, 0
+
+21:57:40.349 [29.304,229] <inf> GPS 1.7 Hz (25 Hz, 17, 5421)
+
+21:57:44.059 [33.012,390] <wrn> MQTT or LTE not 0, 0
+
+21:57:46.175 [35.131,378] <inf> Acquiring fix... (0, 0)
+
+21:57:49.069 [38.021,636] <wrn> MQTT or LTE not 0, 0
+
+21:57:49.849 [38.807,464] <inf> Acquiring fix... (0, 0)
+
+21:57:50.089 [39.044,708] <wrn> Partial buffer overflow, resetting
+
+21:57:52.614 [41.569,427] <inf> GPS 6.2 Hz (25 Hz, 62, 5587)
+
+21:57:53.649 [42.602,569] <inf> Acquiring fix... (0, 0)
+
+21:57:54.079 [43.030,883] <wrn> MQTT or LTE not 0, 0
+
+21:57:55.904 [44.858,612] <wrn> Partial buffer overflow, resetting
+
+21:57:57.409 [46.363,403] <inf> Acquiring fix... (0, 0)
+
+21:57:59.079 [48.031,433] <wrn> MQTT or LTE not 0, 0
+
+21:58:00.974 [49.929,077] <inf> Acquiring fix... (0, 0)
+
+21:58:02.685 [51.635,009] <inf> GPS 0.7 Hz (25 Hz, 7, 5724)
+
+21:58:04.080 [53.032,043] <wrn> MQTT or LTE not 0, 0
+
+21:58:04.909 [53.863,769] <wrn> Partial buffer overflow, resetting
+
+21:58:06.943 > Sent: show_layout
+21:58:06.945 show_layout
+Encrypted Blob Base 0xfb000
+  Total 8192 bytes (8KB)
+  Header 0 bytes
+  Entry 128 bytes
+  Page 4096 bytes (4KB)
+  Entries per 32
+  Config 2
+  Total 64
+  CRC 0xfcffc (offset 8188)
+
+Page Page offset 0x0, entries 0-31
+  Page offset 0x1000, entries 32-63
+
+21:58:07.339 [56.293,914] <wrn> Partial buffer overflow, resetting
+
+21:58:09.079 [58.033,050] <wrn> MQTT or LTE not 0, 0
+
+21:58:12.719 [01.674,865] <inf> GPS 12.5 Hz (25 Hz, 125, 5860)
+
+21:58:14.080 [03.033,630] <wrn> MQTT or LTE not 0, 0
+
+21:58:15.629 [04.584,075] <wrn> Partial buffer overflow, resetting
+
+21:58:18.780 [07.734,741] <wrn> Partial buffer overflow, resetting
+
+21:58:19.079 [08.034,210] <wrn> MQTT or LTE not 0, 0
+
+21:58:22.764 [11.715,972] <inf> GPS 13.8 Hz (25 Hz, 138, 6000)
+
+21:58:24.079 [13.034,790] <wrn> MQTT or LTE not 0, 0
+
+21:58:24.484 [13.439,575] <wrn> Partial buffer overflow, resetting
+
+21:58:26.799 [15.751,251] <wrn> Partial buffer overflow, resetting
+
+21:58:29.079 [18.035,522] <wrn> MQTT or LTE not 0, 0
+
+21:58:32.854 [21.804,595] <inf> GPS 13.4 Hz (25 Hz, 134, 6136)
+
+21:58:34.084 [23.036,102] <wrn> MQTT or LTE not 0, 0
+
+21:58:39.084 [28.036,682] <wrn> MQTT or LTE not 0, 0
+
+21:58:42.824 [31.779,693] <wrn> Partial buffer overflow, resetting
+
+21:58:42.869 [31.820,007] <inf> GPS 14.2 Hz (25 Hz, 142, 6279)
+
+21:58:44.084 [33.037,322] <wrn> MQTT or LTE not 0, 0
+
+21:58:49.094 [38.046,569] <wrn> MQTT or LTE not 0, 0
+
+21:58:52.930 [41.880,737] <inf> GPS 13.2 Hz (25 Hz, 132, 6412)
+
+21:58:54.099 [43.055,816] <wrn> MQTT or LTE not 0, 0
+
+21:58:58.105 [47.060,394] <wrn> Partial buffer overflow, resetting
+
+21:58:59.109 [48.065,063] <wrn> MQTT or LTE not 0, 0
+
+21:58:59.374 [48.328,430] <inf> Acquiring fix... (0, 0)
+
+21:59:02.944 [51.896,881] <inf> GPS 7.3 Hz (25 Hz, 73, 6547)
+
+21:59:04.119 [53.074,310] <wrn> MQTT or LTE not 0, 0
+
+21:59:09.129 [58.083,557] <wrn> MQTT or LTE not 0, 0
+
+21:59:14.140 [03.092,773] <wrn> MQTT or LTE not 0, 0
+
+21:59:14.614 [03.570,465] <inf> Acquiring fix... (0, 0)
+
+21:59:16.820 [05.771,911] <inf> GPS 12.5 Hz (25 Hz, 125, 6733)
+
+21:59:19.140 [08.093,322] <wrn> MQTT or LTE not 0, 0
+
+21:59:24.149 [13.102,416] <wrn> MQTT or LTE not 0, 0
+
+21:59:26.884 [15.836,608] <inf> GPS 12.7 Hz (25 Hz, 127, 6865)
+
+21:59:29.159 [18.111,663] <wrn> MQTT or LTE not 0, 0
+
+21:59:34.165 [23.120,910] <wrn> MQTT or LTE not 0, 0
+
+21:59:36.915 [25.866,485] <inf> GPS 13.6 Hz (25 Hz, 136, 7001)
+
+21:59:39.174 [28.130,157] <wrn> MQTT or LTE not 0, 0
+
+21:59:44.184 [33.139,373] <wrn> MQTT or LTE not 0, 0
+
+21:59:47.009 [35.963,195] <inf> GPS 12.7 Hz (25 Hz, 127, 7129)
+
+21:59:49.194 [38.148,651] <wrn> MQTT or LTE not 0, 0
+
+21:59:53.265 [42.218,322] <wrn> Partial buffer overflow, resetting
+
+21:59:54.194 [43.149,200] <wrn> MQTT or LTE not 0, 0
+
+21:59:57.069 [46.021,911] <inf> GPS 13.4 Hz (25 Hz, 134, 7263)
+
+21:59:59.204 [48.158,477] <wrn> MQTT or LTE not 0, 0
+
+21:59:59.880 [48.831,848] <inf> Acquiring fix... (0, 0)
+
+22:00:04.214 [53.167,724] <wrn> MQTT or LTE not 0, 0
+
+22:00:06.899 [55.853,759] <inf> Acquiring fix... (0, 0)
+
+22:00:08.474 [57.428,833] <inf> GPS 7.3 Hz (25 Hz, 73, 7423)
+
+22:00:08.610 Disconnected

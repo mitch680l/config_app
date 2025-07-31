@@ -14,6 +14,7 @@ public:
     ~SerialPort();
 
     bool open(const QString &portName, int baudRate);
+    bool openDual(const QString &readPort, const QString &writePort, int baudRate);
     void close();
     bool isOpen() const;
     QString errorString() const;
@@ -28,7 +29,9 @@ signals:
 
 private:
     HANDLE m_handle;
+    HANDLE m_writeHandle;  // Separate handle for writing
     bool m_isOpen;
+    bool m_isDualMode;
     QString m_errorString;
     
     void setErrorString(const QString &error);

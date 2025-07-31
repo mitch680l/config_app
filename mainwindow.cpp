@@ -10,6 +10,8 @@
 #include <QMenuBar>
 #include <QMenu>
 #include <QAction>
+#include <QDir>
+#include <QStandardPaths>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -18,20 +20,28 @@ MainWindow::MainWindow(QWidget *parent)
     , isConnected(false)
     , currentComPort("COM9")
     , currentBaudRate(115200)
+    , logFile(nullptr)
+    , logBuffer()
+    , logFileName("config_gui.log")
 {
     setupUI();
     populateComPorts();
     populateBaudRates();
     
+    // Initialize log file
+    initializeLogFile();
+    
     // Connect serial port signals
     connect(serialPort, &SerialPort::errorOccurred, this, &MainWindow::handleError);
     
-    // Set up timer for checking data - more frequent for better responsiveness
+    // Set up timer for checking data - very frequent for responsiveness
     connect(dataTimer, &QTimer::timeout, this, &MainWindow::checkForData);
-    dataTimer->setInterval(10); // Check every 10ms instead of 50ms
+    dataTimer->setInterval(5); // Check every 5ms for maximum responsiveness
     
     logMessage("Configuration GUI v1.0", "[INFO] ");
     logMessage("Ready for serial communication", "[INFO] ");
+    logMessage("Using Nordic serial terminal patterns", "[INFO] ");
+    logMessage("COM9 for both read and write operations", "[INFO] ");
 }
 
 MainWindow::~MainWindow()
@@ -39,12 +49,36 @@ MainWindow::~MainWindow()
     if (isConnected) {
         disconnectFromPort();
     }
+    
+    if (logFile) {
+        logFile->close();
+        delete logFile;
+    }
+}
+
+void MainWindow::initializeLogFile()
+{
+    // Create logs directory if it doesn't exist
+    QDir logsDir("logs");
+    if (!logsDir.exists()) {
+        logsDir.mkpath(".");
+    }
+    
+    logFileName = "logs/" + logFileName;
+    logFile = new QFile(logFileName);
+    
+    if (logFile->open(QIODevice::WriteOnly | QIODevice::Append | QIODevice::Text)) {
+        QTextStream stream(logFile);
+        stream << "=== Configuration GUI Log Started: " 
+               << QDateTime::currentDateTime().toString("yyyy-MM-dd hh:mm:ss") << " ===\n";
+        stream.flush();
+    }
 }
 
 void MainWindow::setupUI()
 {
     setWindowTitle("Configuration GUI");
-    setGeometry(100, 100, 800, 600);
+    setGeometry(100, 100, 900, 700); // Larger window for better logging
     
     createMenuBar();
     
@@ -77,44 +111,60 @@ void MainWindow::createMenuBar()
 void MainWindow::createToolbar()
 {
     toolbarWidget = new QWidget;
-    QHBoxLayout *toolbarLayout = new QHBoxLayout(toolbarWidget);
+    QVBoxLayout *toolbarLayout = new QVBoxLayout(toolbarWidget);
+    
+    // Top row - Connection controls
+    QHBoxLayout *topRow = new QHBoxLayout;
     
     // Connect button
     connectButton = new QPushButton("Connect");
     connectButton->setFixedWidth(80);
-    toolbarLayout->addWidget(connectButton);
+    topRow->addWidget(connectButton);
     connect(connectButton, &QPushButton::clicked, this, &MainWindow::toggleConnection);
     
-    toolbarLayout->addSpacing(20);
+    topRow->addSpacing(20);
     
-    // COM Port selection
+    // COM Port selection (Nordic typically uses COM9)
     QLabel *comLabel = new QLabel("COM Port:");
-    toolbarLayout->addWidget(comLabel);
+    topRow->addWidget(comLabel);
     
     comPortCombo = new QComboBox;
     comPortCombo->setFixedWidth(80);
-    toolbarLayout->addWidget(comPortCombo);
+    topRow->addWidget(comPortCombo);
     connect(comPortCombo, QOverload<const QString &>::of(&QComboBox::currentTextChanged),
             this, &MainWindow::onComPortChanged);
     
-    toolbarLayout->addSpacing(20);
+    topRow->addSpacing(20);
     
     // Baud rate selection
     QLabel *baudLabel = new QLabel("Baud:");
-    toolbarLayout->addWidget(baudLabel);
+    topRow->addWidget(baudLabel);
     
     baudRateCombo = new QComboBox;
     baudRateCombo->setFixedWidth(80);
-    toolbarLayout->addWidget(baudRateCombo);
+    topRow->addWidget(baudRateCombo);
     connect(baudRateCombo, QOverload<const QString &>::of(&QComboBox::currentTextChanged),
             this, &MainWindow::onBaudRateChanged);
     
-    toolbarLayout->addStretch();
+    topRow->addStretch();
     
     // Status indicator
     statusLabel = new QLabel("Disconnected");
     statusLabel->setStyleSheet("color: red; font-weight: bold;");
-    toolbarLayout->addWidget(statusLabel);
+    topRow->addWidget(statusLabel);
+    
+    toolbarLayout->addLayout(topRow);
+    
+    // Bottom row - Port info
+    QHBoxLayout *bottomRow = new QHBoxLayout;
+    
+    QLabel *infoLabel = new QLabel("Nordic Serial Terminal - Single COM Port");
+    infoLabel->setStyleSheet("color: blue; font-style: italic;");
+    bottomRow->addWidget(infoLabel);
+    
+    bottomRow->addStretch();
+    
+    toolbarLayout->addLayout(bottomRow);
 }
 
 void MainWindow::createTerminal()
@@ -123,10 +173,11 @@ void MainWindow::createTerminal()
     QGroupBox *terminalGroup = new QGroupBox("Serial Terminal");
     QVBoxLayout *terminalLayout = new QVBoxLayout(terminalGroup);
     
-    // Terminal text area
+    // Terminal text area - larger for better logging
     terminal = new QTextEdit;
     terminal->setReadOnly(true);
     terminal->setFont(QFont("Consolas", 9));
+    terminal->setMinimumHeight(400); // Larger terminal for scrolling
     terminalLayout->addWidget(terminal);
     
     // Input area
@@ -153,8 +204,8 @@ void MainWindow::populateComPorts()
 {
     comPortCombo->clear();
     
-    // Add common COM ports
-    QStringList comPorts = {"COM8", "COM9", "COM10", "COM11"};
+    // Add common COM ports (Nordic typically uses COM9)
+    QStringList comPorts = {"COM9", "COM8", "COM10", "COM11"};
     comPortCombo->addItems(comPorts);
     comPortCombo->setCurrentText(currentComPort);
 }
@@ -170,6 +221,7 @@ void MainWindow::populateBaudRates()
 void MainWindow::onComPortChanged()
 {
     currentComPort = comPortCombo->currentText();
+    logMessage(QString("Selected COM port: %1").arg(currentComPort), "[INFO] ");
 }
 
 void MainWindow::onBaudRateChanged()
@@ -192,19 +244,23 @@ void MainWindow::toggleConnection()
 
 void MainWindow::connectToPort()
 {
-    if (serialPort->open(currentComPort, currentBaudRate)) {
+    // Use single COM port for Nordic terminal
+    bool success = serialPort->open(currentComPort, currentBaudRate);
+    
+    if (success) {
+        logMessage(QString("Connected to %1 at %2 baud").arg(currentComPort, QString::number(currentBaudRate)));
+        logMessage("Nordic terminal ready for commands", "[INFO] ");
+        
         isConnected = true;
         connectButton->setText("Disconnect");
         statusLabel->setText("Connected");
         statusLabel->setStyleSheet("color: green; font-weight: bold;");
-        logMessage(QString("Connected to %1 at %2 baud").arg(currentComPort).arg(currentBaudRate));
         
         // Start timer for data checking
         dataTimer->start();
     } else {
         QMessageBox::critical(this, "Connection Error",
-                            QString("Failed to connect to %1: %2")
-                            .arg(currentComPort, serialPort->errorString()));
+                            QString("Failed to connect: %1").arg(serialPort->errorString()));
     }
 }
 
@@ -228,9 +284,8 @@ void MainWindow::sendCommand()
     
     QString command = commandInput->text().trimmed();
     if (!command.isEmpty()) {
-        // For Zephyr shell, we need to send the command with proper line ending
-        // Zephyr shell expects \r\n (CRLF) for proper command processing
-        QString commandToSend = command + "\r\n";
+        // For Nordic terminal, send command with newline
+        QString commandToSend = command + "\n";
         
         QByteArray data = commandToSend.toUtf8();
         qint64 bytesWritten = serialPort->write(data);
@@ -239,6 +294,7 @@ void MainWindow::sendCommand()
             logMessage(QString("Sent: %1").arg(command), "> ");
             commandInput->clear();
         } else {
+            logMessage(QString("Send failed: wrote %1 of %2 bytes").arg(QString::number(bytesWritten), QString::number(data.size())), "[ERROR] ");
             QMessageBox::critical(this, "Send Error",
                                 QString("Failed to send command: %1").arg(serialPort->errorString()));
         }
@@ -283,6 +339,25 @@ QString MainWindow::cleanAnsiCodes(const QString &input)
     return result;
 }
 
+QString MainWindow::filterShellPrompts(const QString &input)
+{
+    QString filtered = input;
+    
+    // Remove shell prompts like "uart:~$ " and variations
+    QRegularExpression shellPromptRegex(R"(uart:~\$?\s*)");
+    filtered = filtered.remove(shellPromptRegex);
+    
+    // Remove other common shell prompts
+    QRegularExpression genericPromptRegex(R"([a-zA-Z0-9_-]+:~?\$?\s*)");
+    filtered = filtered.remove(genericPromptRegex);
+    
+    // Remove empty lines that might be left after filtering
+    QStringList lines = filtered.split('\n', Qt::SkipEmptyParts);
+    filtered = lines.join('\n');
+    
+    return filtered;
+}
+
 void MainWindow::readData()
 {
     const QByteArray data = serialPort->readAll();
@@ -306,13 +381,16 @@ void MainWindow::readData()
         // Clean ANSI codes and control sequences
         QString cleanedData = cleanAnsiCodes(receivedData);
         
-        if (!cleanedData.isEmpty()) {
-            // For Zephyr shell, we want to preserve the prompt format
+        // Filter out shell prompts
+        QString filteredData = filterShellPrompts(cleanedData);
+        
+        if (!filteredData.isEmpty()) {
+            // For Nordic terminal, preserve the format
             // Replace carriage returns with newlines for proper display
-            cleanedData = cleanedData.replace("\r\n", "\n");
-            cleanedData = cleanedData.replace("\r", "\n");
+            filteredData = filteredData.replace("\r\n", "\n");
+            filteredData = filteredData.replace("\r", "\n");
             
-            logMessage(cleanedData, "");
+            logMessage(filteredData, "");
         }
     }
 }
@@ -326,29 +404,56 @@ void MainWindow::handleError(const QString &error)
     }
 }
 
+void MainWindow::writeToLogFile(const QString &message)
+{
+    if (logFile && logFile->isOpen()) {
+        QTextStream stream(logFile);
+        stream << message << "\n";
+        stream.flush();
+    }
+}
+
+void MainWindow::rotateLogFile()
+{
+    // Keep only the last MAX_LOG_LINES in memory
+    if (logBuffer.size() > MAX_LOG_LINES) {
+        logBuffer = logBuffer.mid(logBuffer.size() - MAX_LOG_LINES);
+    }
+}
+
 void MainWindow::showAbout()
 {
     QMessageBox::about(this, "About Configuration GUI",
         "<h3>Configuration GUI v1.0</h3>"
         "<p>Copyright (c) 2024 - All rights reserved</p>"
-        "<p>A simple GUI application for communicating with embedded Zephyr projects "
+        "<p>A simple GUI application for communicating with Nordic devices "
         "via serial connection.</p>"
         "<p><b>Features:</b></p>"
         "<ul>"
-        "<li>Serial terminal communication</li>"
-        "<li>Configurable COM port and baud rate</li>"
+        "<li>Nordic serial terminal communication</li>"
+        "<li>Single COM port support</li>"
         "<li>Real-time data logging</li>"
         "<li>ANSI code filtering</li>"
+        "<li>Shell prompt filtering</li>"
+        "<li>Log file with 10,000 line history</li>"
         "</ul>"
         "<p>Built with Qt6 and C++</p>");
 }
 
 void MainWindow::logMessage(const QString &message, const QString &prefix)
 {
-    QString timestamp = QDateTime::currentDateTime().toString("hh:mm:ss");
-    QString formattedMessage = QString("%1 %2%3\n").arg(timestamp, prefix, message);
+    QString timestamp = QDateTime::currentDateTime().toString("hh:mm:ss.zzz"); // Include milliseconds
+    QString formattedMessage = QString("%1 %2%3").arg(timestamp, prefix, message);
     
-    terminal->insertPlainText(formattedMessage);
+    // Add to terminal
+    terminal->insertPlainText(formattedMessage + "\n");
+    
+    // Add to log buffer
+    logBuffer.append(formattedMessage);
+    rotateLogFile();
+    
+    // Write to log file
+    writeToLogFile(formattedMessage);
     
     // Auto-scroll to bottom
     QScrollBar *scrollBar = terminal->verticalScrollBar();

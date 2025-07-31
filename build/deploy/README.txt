@@ -5,3 +5,9 @@ Usage:
 2. Run ConfigGUI.exe 
 3. Select COM port and click Connect 
 4. Use the terminal to send commands 
+ 
+Required files: 
+- ConfigGUI.exe 
+- Qt6Core.dll, Qt6Gui.dll, Qt6Widgets.dll 
+- platforms/qwindows.dll (Windows GUI plugin) 
+- MinGW runtime DLLs 
