@@ -1,0 +1,5 @@
+C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/ConfigGUI.dir
+C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/edit_cache.dir
+C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/rebuild_cache.dir
+C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/ConfigGUI_autogen_timestamp_deps.dir
+C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/ConfigGUI_autogen.dir
