@@ -476,6 +476,36 @@ CMakeFiles/ConfigGUI.dir/ConfigGUI_autogen/mocs_compilation.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/bits/fs_ops.h \
  C:/Qt/6.9.1/mingw_64/include/QtCore/QTextStream \
  C:/Qt/6.9.1/mingw_64/include/QtCore/qtextstream.h \
+ C:/Qt/6.9.1/mingw_64/include/QtSerialPort/QSerialPortInfo \
+ C:/Qt/6.9.1/mingw_64/include/QtSerialPort/qserialportinfo.h \
+ C:/Qt/6.9.1/mingw_64/include/QtSerialPort/qserialportglobal.h \
+ C:/Qt/6.9.1/mingw_64/include/QtSerialPort/qtserialportexports.h \
+ C:/Qt/6.9.1/mingw_64/include/QtWidgets/QSplitter \
+ C:/Qt/6.9.1/mingw_64/include/QtWidgets/qsplitter.h \
+ C:/Qt/6.9.1/mingw_64/include/QtWidgets/QVBoxLayout \
+ C:/Qt/6.9.1/mingw_64/include/QtWidgets/qboxlayout.h \
+ C:/Qt/6.9.1/mingw_64/include/QtWidgets/qlayout.h \
+ C:/Qt/6.9.1/mingw_64/include/QtWidgets/qlayoutitem.h \
+ C:/Qt/6.9.1/mingw_64/include/QtWidgets/qboxlayout.h \
+ C:/Qt/6.9.1/mingw_64/include/QtWidgets/qgridlayout.h \
+ C:/Qt/6.9.1/mingw_64/include/QtWidgets/QHBoxLayout \
+ C:/Qt/6.9.1/mingw_64/include/QtWidgets/QTabWidget \
+ C:/Qt/6.9.1/mingw_64/include/QtWidgets/qtabwidget.h \
+ C:/Qt/6.9.1/mingw_64/include/QtWidgets/QFileDialog \
+ C:/Qt/6.9.1/mingw_64/include/QtWidgets/qfiledialog.h \
+ C:/Qt/6.9.1/mingw_64/include/QtCore/qdir.h \
+ C:/Qt/6.9.1/mingw_64/include/QtCore/qdirlisting.h \
+ C:/Qt/6.9.1/mingw_64/include/QtCore/qdatetime.h \
+ C:/Qt/6.9.1/mingw_64/include/QtCore/qfile.h \
+ C:/Qt/6.9.1/mingw_64/include/QtCore/qfileinfo.h \
+ C:/Qt/6.9.1/mingw_64/include/QtCore/qtimezone.h \
+ C:/Qt/6.9.1/mingw_64/include/QtWidgets/qdialog.h \
+ C:/Qt/6.9.1/mingw_64/include/QtWidgets/QProgressBar \
+ C:/Qt/6.9.1/mingw_64/include/QtWidgets/qprogressbar.h \
+ C:/Qt/6.9.1/mingw_64/include/QtWidgets/QRadioButton \
+ C:/Qt/6.9.1/mingw_64/include/QtWidgets/qradiobutton.h \
+ C:/Qt/6.9.1/mingw_64/include/QtWidgets/QButtonGroup \
+ C:/Qt/6.9.1/mingw_64/include/QtWidgets/qbuttongroup.h \
  C:/Users/leona/Desktop/config_app/config_app/serialport.h \
  C:/Qt/6.9.1/mingw_64/include/QtCore/QObject \
  C:/Qt/6.9.1/mingw_64/include/QtCore/qobject.h \

@@ -4,8 +4,8 @@ project(ConfigurationGUI)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Find Qt6 components (without SerialPort)
-find_package(Qt6 REQUIRED COMPONENTS Core Widgets)
+# Find Qt6 components (including SerialPort for auto-detection)
+find_package(Qt6 REQUIRED COMPONENTS Core Widgets SerialPort)
 
 # Set up Qt6
 set(CMAKE_AUTOMOC ON)
@@ -25,6 +25,7 @@ add_executable(ConfigGUI
 target_link_libraries(ConfigGUI
     Qt6::Core
     Qt6::Widgets
+    Qt6::SerialPort
 )
 
 # Windows-specific settings
@@ -44,6 +45,11 @@ if(WIN32)
     add_custom_command(TARGET ConfigGUI POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy_if_different
         $<TARGET_FILE:Qt6::Widgets>
+        $<TARGET_FILE_DIR:ConfigGUI>
+    )
+    add_custom_command(TARGET ConfigGUI POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        $<TARGET_FILE:Qt6::SerialPort>
         $<TARGET_FILE_DIR:ConfigGUI>
     )
 endif() 

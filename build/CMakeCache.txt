@@ -146,7 +146,7 @@ CMAKE_INSTALL_MANDIR:PATH=
 CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/ConfigGUI
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/ConfigurationGUI
 
 //Run-time variable data (LOCALSTATEDIR/run)
 CMAKE_INSTALL_RUNSTATEDIR:PATH=
@@ -309,15 +309,6 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-ConfigGUI_BINARY_DIR:STATIC=C:/Users/leona/Desktop/config_app/config_app/build
-
-//Value Computed by CMake
-ConfigGUI_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-ConfigGUI_SOURCE_DIR:STATIC=C:/Users/leona/Desktop/config_app/config_app
-
-//Value Computed by CMake
 ConfigurationGUI_BINARY_DIR:STATIC=C:/Users/leona/Desktop/config_app/config_app/build
 
 //Value Computed by CMake
@@ -354,8 +345,11 @@ Qt6GuiTools_DIR:PATH=C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6GuiTools
 //The directory containing a CMake configuration file for Qt6Gui.
 Qt6Gui_DIR:PATH=C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6Gui
 
+//The directory containing a CMake configuration file for Qt6SerialPortPrivate.
+Qt6SerialPortPrivate_DIR:PATH=C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6SerialPortPrivate
+
 //The directory containing a CMake configuration file for Qt6SerialPort.
-Qt6SerialPort_DIR:PATH=Qt6SerialPort_DIR-NOTFOUND
+Qt6SerialPort_DIR:PATH=C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6SerialPort
 
 //The directory containing a CMake configuration file for Qt6WidgetsPrivate.
 Qt6WidgetsPrivate_DIR:PATH=C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6WidgetsPrivate
@@ -1000,6 +994,8 @@ QT_FEATURE_network:INTERNAL=ON
 QT_FEATURE_no_direct_extern_access:INTERNAL=OFF
 //Qt feature: no_pkg_config (from target Qt6::Core)
 QT_FEATURE_no_pkg_config:INTERNAL=ON
+//Qt feature: ntddmodm (from target Qt6::SerialPort)
+QT_FEATURE_ntddmodm:INTERNAL=OFF
 //Qt feature: opengl (from target Qt6::Gui)
 QT_FEATURE_opengl:INTERNAL=ON
 //Qt feature: opengles2 (from target Qt6::Gui)
@@ -1383,5 +1379,5 @@ Vulkan_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Vulkan_LIBRARY
 Vulkan_LIBRARY-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
-_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/ConfigGUI
+_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/ConfigurationGUI
 

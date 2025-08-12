@@ -39,11 +39,14 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Git/cmd/"
       - "C:/NR/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Go/bin/"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/leona/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/leona/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/leona/AppData/Local/Programs/cursor/resources/app/bin/"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/"
+      - "C:/Users/leona/go/bin/"
       - "/REGISTRY-NOTFOUND/bin/"
       - "c:/MinGW/bin/"
       - "/MinGW/bin/"
@@ -70,7 +73,20 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -86,6 +102,8 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -121,11 +139,14 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Git/cmd/"
       - "C:/NR/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Go/bin/"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/leona/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/leona/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/leona/AppData/Local/Programs/cursor/resources/app/bin/"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/"
+      - "C:/Users/leona/go/bin/"
     searched_directories:
       - "C:/Windows/System32/cc.com"
       - "C:/Windows/System32/cc.exe"
@@ -237,7 +258,20 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -253,6 +287,8 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -281,7 +317,20 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -297,6 +346,8 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
   -
     kind: "message-v1"
     backtrace:
@@ -348,18 +399,34 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Git/cmd/"
       - "C:/NR/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Go/bin/"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/leona/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/leona/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/leona/AppData/Local/Programs/cursor/resources/app/bin/"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/"
+      - "C:/Users/leona/go/bin/"
     searched_directories:
       - "C:/msys64/mingw64/bin/ar.com"
     found: "C:/msys64/mingw64/bin/ar.exe"
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -375,6 +442,8 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -404,18 +473,34 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Git/cmd/"
       - "C:/NR/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Go/bin/"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/leona/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/leona/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/leona/AppData/Local/Programs/cursor/resources/app/bin/"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/"
+      - "C:/Users/leona/go/bin/"
     searched_directories:
       - "C:/msys64/mingw64/bin/ranlib.com"
     found: "C:/msys64/mingw64/bin/ranlib.exe"
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -431,6 +516,8 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -460,18 +547,34 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Git/cmd/"
       - "C:/NR/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Go/bin/"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/leona/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/leona/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/leona/AppData/Local/Programs/cursor/resources/app/bin/"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/"
+      - "C:/Users/leona/go/bin/"
     searched_directories:
       - "C:/msys64/mingw64/bin/strip.com"
     found: "C:/msys64/mingw64/bin/strip.exe"
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -487,6 +590,8 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -516,18 +621,34 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Git/cmd/"
       - "C:/NR/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Go/bin/"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/leona/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/leona/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/leona/AppData/Local/Programs/cursor/resources/app/bin/"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/"
+      - "C:/Users/leona/go/bin/"
     searched_directories:
       - "C:/msys64/mingw64/bin/ld.com"
     found: "C:/msys64/mingw64/bin/ld.exe"
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -543,6 +664,8 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -572,18 +695,34 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Git/cmd/"
       - "C:/NR/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Go/bin/"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/leona/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/leona/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/leona/AppData/Local/Programs/cursor/resources/app/bin/"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/"
+      - "C:/Users/leona/go/bin/"
     searched_directories:
       - "C:/msys64/mingw64/bin/nm.com"
     found: "C:/msys64/mingw64/bin/nm.exe"
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -599,6 +738,8 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -628,18 +769,34 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Git/cmd/"
       - "C:/NR/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Go/bin/"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/leona/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/leona/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/leona/AppData/Local/Programs/cursor/resources/app/bin/"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/"
+      - "C:/Users/leona/go/bin/"
     searched_directories:
       - "C:/msys64/mingw64/bin/objdump.com"
     found: "C:/msys64/mingw64/bin/objdump.exe"
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -655,6 +812,8 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -684,18 +843,34 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Git/cmd/"
       - "C:/NR/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Go/bin/"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/leona/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/leona/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/leona/AppData/Local/Programs/cursor/resources/app/bin/"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/"
+      - "C:/Users/leona/go/bin/"
     searched_directories:
       - "C:/msys64/mingw64/bin/objcopy.com"
     found: "C:/msys64/mingw64/bin/objcopy.exe"
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -711,6 +886,8 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -740,18 +917,34 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Git/cmd/"
       - "C:/NR/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Go/bin/"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/leona/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/leona/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/leona/AppData/Local/Programs/cursor/resources/app/bin/"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/"
+      - "C:/Users/leona/go/bin/"
     searched_directories:
       - "C:/msys64/mingw64/bin/readelf.com"
     found: "C:/msys64/mingw64/bin/readelf.exe"
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -767,6 +960,8 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -796,18 +991,34 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Git/cmd/"
       - "C:/NR/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Go/bin/"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/leona/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/leona/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/leona/AppData/Local/Programs/cursor/resources/app/bin/"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/"
+      - "C:/Users/leona/go/bin/"
     searched_directories:
       - "C:/msys64/mingw64/bin/dlltool.com"
     found: "C:/msys64/mingw64/bin/dlltool.exe"
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -823,6 +1034,8 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -852,18 +1065,34 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Git/cmd/"
       - "C:/NR/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Go/bin/"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/leona/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/leona/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/leona/AppData/Local/Programs/cursor/resources/app/bin/"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/"
+      - "C:/Users/leona/go/bin/"
     searched_directories:
       - "C:/msys64/mingw64/bin/addr2line.com"
     found: "C:/msys64/mingw64/bin/addr2line.exe"
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -879,6 +1108,8 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -908,11 +1139,14 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Git/cmd/"
       - "C:/NR/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Go/bin/"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/leona/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/leona/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/leona/AppData/Local/Programs/cursor/resources/app/bin/"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/"
+      - "C:/Users/leona/go/bin/"
     searched_directories:
       - "C:/msys64/mingw64/bin/tapi.com"
       - "C:/msys64/mingw64/bin/tapi.exe"
@@ -941,6 +1175,12 @@ events:
       - "C:/NR/tapi.com"
       - "C:/NR/tapi.exe"
       - "C:/NR/tapi"
+      - "C:/Program Files/CMake/bin/tapi.com"
+      - "C:/Program Files/CMake/bin/tapi.exe"
+      - "C:/Program Files/CMake/bin/tapi"
+      - "C:/Program Files/Go/bin/tapi.com"
+      - "C:/Program Files/Go/bin/tapi.exe"
+      - "C:/Program Files/Go/bin/tapi"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/tapi.com"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/tapi.exe"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/tapi"
@@ -956,11 +1196,27 @@ events:
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/tapi.com"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/tapi.exe"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/tapi"
+      - "C:/Users/leona/go/bin/tapi.com"
+      - "C:/Users/leona/go/bin/tapi.exe"
+      - "C:/Users/leona/go/bin/tapi"
     found: false
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -976,6 +1232,8 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1008,11 +1266,14 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Git/cmd/"
       - "C:/NR/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Go/bin/"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/leona/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/leona/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/leona/AppData/Local/Programs/cursor/resources/app/bin/"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/"
+      - "C:/Users/leona/go/bin/"
     searched_directories:
       - "C:/msys64/mingw64/bin/gcc-ar-14.2.com"
       - "C:/msys64/mingw64/bin/gcc-ar-14.2.exe"
@@ -1041,6 +1302,12 @@ events:
       - "C:/NR/gcc-ar-14.2.com"
       - "C:/NR/gcc-ar-14.2.exe"
       - "C:/NR/gcc-ar-14.2"
+      - "C:/Program Files/CMake/bin/gcc-ar-14.2.com"
+      - "C:/Program Files/CMake/bin/gcc-ar-14.2.exe"
+      - "C:/Program Files/CMake/bin/gcc-ar-14.2"
+      - "C:/Program Files/Go/bin/gcc-ar-14.2.com"
+      - "C:/Program Files/Go/bin/gcc-ar-14.2.exe"
+      - "C:/Program Files/Go/bin/gcc-ar-14.2"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ar-14.2.com"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ar-14.2.exe"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ar-14.2"
@@ -1056,6 +1323,9 @@ events:
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ar-14.2.com"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ar-14.2.exe"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ar-14.2"
+      - "C:/Users/leona/go/bin/gcc-ar-14.2.com"
+      - "C:/Users/leona/go/bin/gcc-ar-14.2.exe"
+      - "C:/Users/leona/go/bin/gcc-ar-14.2"
       - "C:/msys64/mingw64/bin/gcc-ar-14.com"
       - "C:/msys64/mingw64/bin/gcc-ar-14.exe"
       - "C:/msys64/mingw64/bin/gcc-ar-14"
@@ -1083,6 +1353,12 @@ events:
       - "C:/NR/gcc-ar-14.com"
       - "C:/NR/gcc-ar-14.exe"
       - "C:/NR/gcc-ar-14"
+      - "C:/Program Files/CMake/bin/gcc-ar-14.com"
+      - "C:/Program Files/CMake/bin/gcc-ar-14.exe"
+      - "C:/Program Files/CMake/bin/gcc-ar-14"
+      - "C:/Program Files/Go/bin/gcc-ar-14.com"
+      - "C:/Program Files/Go/bin/gcc-ar-14.exe"
+      - "C:/Program Files/Go/bin/gcc-ar-14"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ar-14.com"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ar-14.exe"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ar-14"
@@ -1098,6 +1374,9 @@ events:
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ar-14.com"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ar-14.exe"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ar-14"
+      - "C:/Users/leona/go/bin/gcc-ar-14.com"
+      - "C:/Users/leona/go/bin/gcc-ar-14.exe"
+      - "C:/Users/leona/go/bin/gcc-ar-14"
       - "C:/msys64/mingw64/bin/gcc-ar14.com"
       - "C:/msys64/mingw64/bin/gcc-ar14.exe"
       - "C:/msys64/mingw64/bin/gcc-ar14"
@@ -1125,6 +1404,12 @@ events:
       - "C:/NR/gcc-ar14.com"
       - "C:/NR/gcc-ar14.exe"
       - "C:/NR/gcc-ar14"
+      - "C:/Program Files/CMake/bin/gcc-ar14.com"
+      - "C:/Program Files/CMake/bin/gcc-ar14.exe"
+      - "C:/Program Files/CMake/bin/gcc-ar14"
+      - "C:/Program Files/Go/bin/gcc-ar14.com"
+      - "C:/Program Files/Go/bin/gcc-ar14.exe"
+      - "C:/Program Files/Go/bin/gcc-ar14"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ar14.com"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ar14.exe"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ar14"
@@ -1140,12 +1425,28 @@ events:
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ar14.com"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ar14.exe"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ar14"
+      - "C:/Users/leona/go/bin/gcc-ar14.com"
+      - "C:/Users/leona/go/bin/gcc-ar14.exe"
+      - "C:/Users/leona/go/bin/gcc-ar14"
       - "C:/msys64/mingw64/bin/gcc-ar.com"
     found: "C:/msys64/mingw64/bin/gcc-ar.exe"
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -1161,6 +1462,8 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1193,11 +1496,14 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Git/cmd/"
       - "C:/NR/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Go/bin/"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/leona/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/leona/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/leona/AppData/Local/Programs/cursor/resources/app/bin/"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/"
+      - "C:/Users/leona/go/bin/"
     searched_directories:
       - "C:/msys64/mingw64/bin/gcc-ranlib-14.2.com"
       - "C:/msys64/mingw64/bin/gcc-ranlib-14.2.exe"
@@ -1226,6 +1532,12 @@ events:
       - "C:/NR/gcc-ranlib-14.2.com"
       - "C:/NR/gcc-ranlib-14.2.exe"
       - "C:/NR/gcc-ranlib-14.2"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-14.2.com"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-14.2.exe"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-14.2"
+      - "C:/Program Files/Go/bin/gcc-ranlib-14.2.com"
+      - "C:/Program Files/Go/bin/gcc-ranlib-14.2.exe"
+      - "C:/Program Files/Go/bin/gcc-ranlib-14.2"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ranlib-14.2.com"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ranlib-14.2.exe"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ranlib-14.2"
@@ -1241,6 +1553,9 @@ events:
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ranlib-14.2.com"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ranlib-14.2.exe"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ranlib-14.2"
+      - "C:/Users/leona/go/bin/gcc-ranlib-14.2.com"
+      - "C:/Users/leona/go/bin/gcc-ranlib-14.2.exe"
+      - "C:/Users/leona/go/bin/gcc-ranlib-14.2"
       - "C:/msys64/mingw64/bin/gcc-ranlib-14.com"
       - "C:/msys64/mingw64/bin/gcc-ranlib-14.exe"
       - "C:/msys64/mingw64/bin/gcc-ranlib-14"
@@ -1268,6 +1583,12 @@ events:
       - "C:/NR/gcc-ranlib-14.com"
       - "C:/NR/gcc-ranlib-14.exe"
       - "C:/NR/gcc-ranlib-14"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-14.com"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-14.exe"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-14"
+      - "C:/Program Files/Go/bin/gcc-ranlib-14.com"
+      - "C:/Program Files/Go/bin/gcc-ranlib-14.exe"
+      - "C:/Program Files/Go/bin/gcc-ranlib-14"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ranlib-14.com"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ranlib-14.exe"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ranlib-14"
@@ -1283,6 +1604,9 @@ events:
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ranlib-14.com"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ranlib-14.exe"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ranlib-14"
+      - "C:/Users/leona/go/bin/gcc-ranlib-14.com"
+      - "C:/Users/leona/go/bin/gcc-ranlib-14.exe"
+      - "C:/Users/leona/go/bin/gcc-ranlib-14"
       - "C:/msys64/mingw64/bin/gcc-ranlib14.com"
       - "C:/msys64/mingw64/bin/gcc-ranlib14.exe"
       - "C:/msys64/mingw64/bin/gcc-ranlib14"
@@ -1310,6 +1634,12 @@ events:
       - "C:/NR/gcc-ranlib14.com"
       - "C:/NR/gcc-ranlib14.exe"
       - "C:/NR/gcc-ranlib14"
+      - "C:/Program Files/CMake/bin/gcc-ranlib14.com"
+      - "C:/Program Files/CMake/bin/gcc-ranlib14.exe"
+      - "C:/Program Files/CMake/bin/gcc-ranlib14"
+      - "C:/Program Files/Go/bin/gcc-ranlib14.com"
+      - "C:/Program Files/Go/bin/gcc-ranlib14.exe"
+      - "C:/Program Files/Go/bin/gcc-ranlib14"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ranlib14.com"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ranlib14.exe"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ranlib14"
@@ -1325,12 +1655,28 @@ events:
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ranlib14.com"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ranlib14.exe"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ranlib14"
+      - "C:/Users/leona/go/bin/gcc-ranlib14.com"
+      - "C:/Users/leona/go/bin/gcc-ranlib14.exe"
+      - "C:/Users/leona/go/bin/gcc-ranlib14"
       - "C:/msys64/mingw64/bin/gcc-ranlib.com"
     found: "C:/msys64/mingw64/bin/gcc-ranlib.exe"
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -1346,6 +1692,8 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1378,7 +1726,20 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -1394,6 +1755,8 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1422,7 +1785,20 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -1438,6 +1814,8 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
   -
     kind: "message-v1"
     backtrace:
@@ -1492,11 +1870,14 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Git/cmd/"
       - "C:/NR/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Go/bin/"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/leona/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/leona/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/leona/AppData/Local/Programs/cursor/resources/app/bin/"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/"
+      - "C:/Users/leona/go/bin/"
     searched_directories:
       - "C:/msys64/mingw64/bin/gcc-ar-14.2.com"
       - "C:/msys64/mingw64/bin/gcc-ar-14.2.exe"
@@ -1525,6 +1906,12 @@ events:
       - "C:/NR/gcc-ar-14.2.com"
       - "C:/NR/gcc-ar-14.2.exe"
       - "C:/NR/gcc-ar-14.2"
+      - "C:/Program Files/CMake/bin/gcc-ar-14.2.com"
+      - "C:/Program Files/CMake/bin/gcc-ar-14.2.exe"
+      - "C:/Program Files/CMake/bin/gcc-ar-14.2"
+      - "C:/Program Files/Go/bin/gcc-ar-14.2.com"
+      - "C:/Program Files/Go/bin/gcc-ar-14.2.exe"
+      - "C:/Program Files/Go/bin/gcc-ar-14.2"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ar-14.2.com"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ar-14.2.exe"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ar-14.2"
@@ -1540,6 +1927,9 @@ events:
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ar-14.2.com"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ar-14.2.exe"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ar-14.2"
+      - "C:/Users/leona/go/bin/gcc-ar-14.2.com"
+      - "C:/Users/leona/go/bin/gcc-ar-14.2.exe"
+      - "C:/Users/leona/go/bin/gcc-ar-14.2"
       - "C:/msys64/mingw64/bin/gcc-ar-14.com"
       - "C:/msys64/mingw64/bin/gcc-ar-14.exe"
       - "C:/msys64/mingw64/bin/gcc-ar-14"
@@ -1567,6 +1957,12 @@ events:
       - "C:/NR/gcc-ar-14.com"
       - "C:/NR/gcc-ar-14.exe"
       - "C:/NR/gcc-ar-14"
+      - "C:/Program Files/CMake/bin/gcc-ar-14.com"
+      - "C:/Program Files/CMake/bin/gcc-ar-14.exe"
+      - "C:/Program Files/CMake/bin/gcc-ar-14"
+      - "C:/Program Files/Go/bin/gcc-ar-14.com"
+      - "C:/Program Files/Go/bin/gcc-ar-14.exe"
+      - "C:/Program Files/Go/bin/gcc-ar-14"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ar-14.com"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ar-14.exe"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ar-14"
@@ -1582,6 +1978,9 @@ events:
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ar-14.com"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ar-14.exe"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ar-14"
+      - "C:/Users/leona/go/bin/gcc-ar-14.com"
+      - "C:/Users/leona/go/bin/gcc-ar-14.exe"
+      - "C:/Users/leona/go/bin/gcc-ar-14"
       - "C:/msys64/mingw64/bin/gcc-ar14.com"
       - "C:/msys64/mingw64/bin/gcc-ar14.exe"
       - "C:/msys64/mingw64/bin/gcc-ar14"
@@ -1609,6 +2008,12 @@ events:
       - "C:/NR/gcc-ar14.com"
       - "C:/NR/gcc-ar14.exe"
       - "C:/NR/gcc-ar14"
+      - "C:/Program Files/CMake/bin/gcc-ar14.com"
+      - "C:/Program Files/CMake/bin/gcc-ar14.exe"
+      - "C:/Program Files/CMake/bin/gcc-ar14"
+      - "C:/Program Files/Go/bin/gcc-ar14.com"
+      - "C:/Program Files/Go/bin/gcc-ar14.exe"
+      - "C:/Program Files/Go/bin/gcc-ar14"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ar14.com"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ar14.exe"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ar14"
@@ -1624,12 +2029,28 @@ events:
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ar14.com"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ar14.exe"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ar14"
+      - "C:/Users/leona/go/bin/gcc-ar14.com"
+      - "C:/Users/leona/go/bin/gcc-ar14.exe"
+      - "C:/Users/leona/go/bin/gcc-ar14"
       - "C:/msys64/mingw64/bin/gcc-ar.com"
     found: "C:/msys64/mingw64/bin/gcc-ar.exe"
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -1645,6 +2066,8 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1677,11 +2100,14 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Git/cmd/"
       - "C:/NR/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Go/bin/"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/leona/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/leona/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/leona/AppData/Local/Programs/cursor/resources/app/bin/"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/"
+      - "C:/Users/leona/go/bin/"
     searched_directories:
       - "C:/msys64/mingw64/bin/gcc-ranlib-14.2.com"
       - "C:/msys64/mingw64/bin/gcc-ranlib-14.2.exe"
@@ -1710,6 +2136,12 @@ events:
       - "C:/NR/gcc-ranlib-14.2.com"
       - "C:/NR/gcc-ranlib-14.2.exe"
       - "C:/NR/gcc-ranlib-14.2"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-14.2.com"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-14.2.exe"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-14.2"
+      - "C:/Program Files/Go/bin/gcc-ranlib-14.2.com"
+      - "C:/Program Files/Go/bin/gcc-ranlib-14.2.exe"
+      - "C:/Program Files/Go/bin/gcc-ranlib-14.2"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ranlib-14.2.com"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ranlib-14.2.exe"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ranlib-14.2"
@@ -1725,6 +2157,9 @@ events:
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ranlib-14.2.com"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ranlib-14.2.exe"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ranlib-14.2"
+      - "C:/Users/leona/go/bin/gcc-ranlib-14.2.com"
+      - "C:/Users/leona/go/bin/gcc-ranlib-14.2.exe"
+      - "C:/Users/leona/go/bin/gcc-ranlib-14.2"
       - "C:/msys64/mingw64/bin/gcc-ranlib-14.com"
       - "C:/msys64/mingw64/bin/gcc-ranlib-14.exe"
       - "C:/msys64/mingw64/bin/gcc-ranlib-14"
@@ -1752,6 +2187,12 @@ events:
       - "C:/NR/gcc-ranlib-14.com"
       - "C:/NR/gcc-ranlib-14.exe"
       - "C:/NR/gcc-ranlib-14"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-14.com"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-14.exe"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-14"
+      - "C:/Program Files/Go/bin/gcc-ranlib-14.com"
+      - "C:/Program Files/Go/bin/gcc-ranlib-14.exe"
+      - "C:/Program Files/Go/bin/gcc-ranlib-14"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ranlib-14.com"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ranlib-14.exe"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ranlib-14"
@@ -1767,6 +2208,9 @@ events:
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ranlib-14.com"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ranlib-14.exe"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ranlib-14"
+      - "C:/Users/leona/go/bin/gcc-ranlib-14.com"
+      - "C:/Users/leona/go/bin/gcc-ranlib-14.exe"
+      - "C:/Users/leona/go/bin/gcc-ranlib-14"
       - "C:/msys64/mingw64/bin/gcc-ranlib14.com"
       - "C:/msys64/mingw64/bin/gcc-ranlib14.exe"
       - "C:/msys64/mingw64/bin/gcc-ranlib14"
@@ -1794,6 +2238,12 @@ events:
       - "C:/NR/gcc-ranlib14.com"
       - "C:/NR/gcc-ranlib14.exe"
       - "C:/NR/gcc-ranlib14"
+      - "C:/Program Files/CMake/bin/gcc-ranlib14.com"
+      - "C:/Program Files/CMake/bin/gcc-ranlib14.exe"
+      - "C:/Program Files/CMake/bin/gcc-ranlib14"
+      - "C:/Program Files/Go/bin/gcc-ranlib14.com"
+      - "C:/Program Files/Go/bin/gcc-ranlib14.exe"
+      - "C:/Program Files/Go/bin/gcc-ranlib14"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ranlib14.com"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ranlib14.exe"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/gcc-ranlib14"
@@ -1809,12 +2259,28 @@ events:
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ranlib14.com"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ranlib14.exe"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/gcc-ranlib14"
+      - "C:/Users/leona/go/bin/gcc-ranlib14.com"
+      - "C:/Users/leona/go/bin/gcc-ranlib14.exe"
+      - "C:/Users/leona/go/bin/gcc-ranlib14"
       - "C:/msys64/mingw64/bin/gcc-ranlib.com"
     found: "C:/msys64/mingw64/bin/gcc-ranlib.exe"
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -1830,6 +2296,8 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1865,11 +2333,14 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Git/cmd/"
       - "C:/NR/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Go/bin/"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/leona/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/leona/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/leona/AppData/Local/Programs/cursor/resources/app/bin/"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/"
+      - "C:/Users/leona/go/bin/"
       - "C:/Program Files/bin/"
       - "C:/Program Files/sbin/"
       - "C:/Program Files/"
@@ -1879,9 +2350,9 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/CMake/sbin/"
       - "C:/Program Files/CMake/"
-      - "C:/Program Files (x86)/ConfigGUI/bin/"
-      - "C:/Program Files (x86)/ConfigGUI/sbin/"
-      - "C:/Program Files (x86)/ConfigGUI/"
+      - "C:/Program Files (x86)/ConfigurationGUI/bin/"
+      - "C:/Program Files (x86)/ConfigurationGUI/sbin/"
+      - "C:/Program Files (x86)/ConfigurationGUI/"
     searched_directories:
       - "C:/Qt/6.9.1/mingw_64/bin/windres.com"
       - "C:/Qt/6.9.1/mingw_64/bin/windres.exe"
@@ -1912,7 +2383,20 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -1928,12 +2412,14 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigGUI"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigurationGUI"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/ConfigGUI"
+        - "C:/Program Files (x86)/ConfigurationGUI"
   -
     kind: "try_compile-v1"
     backtrace:
@@ -1943,8 +2429,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-gxpyh2"
-      binary: "C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-gxpyh2"
+      source: "C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-hclloy"
+      binary: "C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-hclloy"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1953,13 +2439,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-gxpyh2'
+        Change Dir: 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-hclloy'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_be3df/fast
-        C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_be3df.dir\\build.make CMakeFiles/cmTC_be3df.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-gxpyh2'
-        Building C object CMakeFiles/cmTC_be3df.dir/CMakeCCompilerABI.c.obj
-        C:\\msys64\\mingw64\\bin\\cc.exe   -v -o CMakeFiles\\cmTC_be3df.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_5131b/fast
+        C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_5131b.dir\\build.make CMakeFiles/cmTC_5131b.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-hclloy'
+        Building C object CMakeFiles/cmTC_5131b.dir/CMakeCCompilerABI.c.obj
+        C:\\msys64\\mingw64\\bin\\cc.exe   -v -o CMakeFiles\\cmTC_5131b.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
         Using built-in specs.
         COLLECT_GCC=C:\\msys64\\mingw64\\bin\\cc.exe
         Target: x86_64-w64-mingw32
@@ -1967,8 +2453,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 14.2.0 (Rev3, Built by MSYS2 project) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_be3df.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_be3df.dir\\'
-         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/cc1.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_be3df.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\Users\\leona\\AppData\\Local\\Temp\\ccK2KErq.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5131b.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_5131b.dir\\'
+         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/cc1.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_5131b.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\Users\\leona\\AppData\\Local\\Temp\\ccureIZ7.s
         GNU C17 (Rev3, Built by MSYS2 project) version 14.2.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -1988,14 +2474,14 @@ events:
          C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/include-fixed
         End of search list.
         Compiler executable checksum: 044dc7e786fef208387ba8a79ebebc21
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_be3df.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_be3df.dir\\'
-         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_be3df.dir\\CMakeCCompilerABI.c.obj C:\\Users\\leona\\AppData\\Local\\Temp\\ccK2KErq.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5131b.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_5131b.dir\\'
+         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_5131b.dir\\CMakeCCompilerABI.c.obj C:\\Users\\leona\\AppData\\Local\\Temp\\ccureIZ7.s
         GNU assembler version 2.44 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.44
         COMPILER_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_be3df.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_be3df.dir\\CMakeCCompilerABI.c.'
-        Linking C executable cmTC_be3df.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_be3df.dir\\link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5131b.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_5131b.dir\\CMakeCCompilerABI.c.'
+        Linking C executable cmTC_5131b.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_5131b.dir\\link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=C:\\msys64\\mingw64\\bin\\cc.exe
         COLLECT_LTO_WRAPPER=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe
@@ -2006,16 +2492,16 @@ events:
         gcc version 14.2.0 (Rev3, Built by MSYS2 project) 
         COMPILER_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_be3df.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_be3df.'
-         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\leona\\AppData\\Local\\Temp\\ccIf2mBA.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_be3df.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_be3df.dir/objects.a --no-whole-archive --out-implib libcmTC_be3df.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5131b.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_5131b.'
+         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\leona\\AppData\\Local\\Temp\\ccMIviDf.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_5131b.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_5131b.dir/objects.a --no-whole-archive --out-implib libcmTC_5131b.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o
         collect2 version 14.2.0
-        C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\leona\\AppData\\Local\\Temp\\ccIf2mBA.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_be3df.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_be3df.dir/objects.a --no-whole-archive --out-implib libcmTC_be3df.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o
+        C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\leona\\AppData\\Local\\Temp\\ccMIviDf.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_5131b.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_5131b.dir/objects.a --no-whole-archive --out-implib libcmTC_5131b.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o
         GNU ld (GNU Binutils) 2.44
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_be3df.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_be3df.'
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_be3df.dir/objects.a
-        C:\\msys64\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_be3df.dir/objects.a @CMakeFiles\\cmTC_be3df.dir\\objects1.rsp
-        C:\\msys64\\mingw64\\bin\\cc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_be3df.dir/objects.a -Wl,--no-whole-archive -o cmTC_be3df.exe -Wl,--out-implib,libcmTC_be3df.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        mingw32-make[1]: Leaving directory 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-gxpyh2'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5131b.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_5131b.'
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_5131b.dir/objects.a
+        C:\\msys64\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_5131b.dir/objects.a @CMakeFiles\\cmTC_5131b.dir\\objects1.rsp
+        C:\\msys64\\mingw64\\bin\\cc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_5131b.dir/objects.a -Wl,--no-whole-archive -o cmTC_5131b.exe -Wl,--out-implib,libcmTC_5131b.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make[1]: Leaving directory 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-hclloy'
         
       exitCode: 0
   -
@@ -2048,13 +2534,13 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-gxpyh2']
+        ignore line: [Change Dir: 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-hclloy']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_be3df/fast]
-        ignore line: [C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_be3df.dir\\build.make CMakeFiles/cmTC_be3df.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-gxpyh2']
-        ignore line: [Building C object CMakeFiles/cmTC_be3df.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [C:\\msys64\\mingw64\\bin\\cc.exe   -v -o CMakeFiles\\cmTC_be3df.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"]
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_5131b/fast]
+        ignore line: [C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_5131b.dir\\build.make CMakeFiles/cmTC_5131b.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-hclloy']
+        ignore line: [Building C object CMakeFiles/cmTC_5131b.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [C:\\msys64\\mingw64\\bin\\cc.exe   -v -o CMakeFiles\\cmTC_5131b.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\msys64\\mingw64\\bin\\cc.exe]
         ignore line: [Target: x86_64-w64-mingw32]
@@ -2062,8 +2548,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 14.2.0 (Rev3  Built by MSYS2 project) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_be3df.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_be3df.dir\\']
-        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/cc1.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_be3df.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\Users\\leona\\AppData\\Local\\Temp\\ccK2KErq.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5131b.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_5131b.dir\\']
+        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/cc1.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_5131b.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\Users\\leona\\AppData\\Local\\Temp\\ccureIZ7.s]
         ignore line: [GNU C17 (Rev3  Built by MSYS2 project) version 14.2.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -2083,8 +2569,8 @@ events:
         ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/include-fixed]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 044dc7e786fef208387ba8a79ebebc21]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_be3df.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_be3df.dir\\']
-        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_be3df.dir\\CMakeCCompilerABI.c.obj C:\\Users\\leona\\AppData\\Local\\Temp\\ccK2KErq.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5131b.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_5131b.dir\\']
+        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_5131b.dir\\CMakeCCompilerABI.c.obj C:\\Users\\leona\\AppData\\Local\\Temp\\ccureIZ7.s]
         ignore line: [GNU assembler version 2.44 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.44]
         ignore line: [COMPILER_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/]
@@ -2095,9 +2581,9 @@ events:
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_be3df.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_be3df.dir\\CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_be3df.exe]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_be3df.dir\\link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5131b.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_5131b.dir\\CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_5131b.exe]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_5131b.dir\\link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\msys64\\mingw64\\bin\\cc.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe]
@@ -2115,13 +2601,13 @@ events:
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_be3df.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_be3df.']
-        link line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\leona\\AppData\\Local\\Temp\\ccIf2mBA.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_be3df.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_be3df.dir/objects.a --no-whole-archive --out-implib libcmTC_be3df.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5131b.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_5131b.']
+        link line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\leona\\AppData\\Local\\Temp\\ccMIviDf.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_5131b.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_5131b.dir/objects.a --no-whole-archive --out-implib libcmTC_5131b.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o]
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\leona\\AppData\\Local\\Temp\\ccIf2mBA.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\leona\\AppData\\Local\\Temp\\ccMIviDf.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
@@ -2143,7 +2629,7 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_be3df.exe] ==> ignore
+          arg [cmTC_5131b.exe] ==> ignore
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/crt2.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/crt2.o]
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o]
           arg [-LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0] ==> dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0]
@@ -2154,10 +2640,10 @@ events:
           arg [-LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../..] ==> dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../..]
           arg [-v] ==> ignore
           arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_be3df.dir/objects.a] ==> ignore
+          arg [CMakeFiles\\cmTC_5131b.dir/objects.a] ==> ignore
           arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_be3df.dll.a] ==> ignore
+          arg [libcmTC_5131b.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -2182,7 +2668,7 @@ events:
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/default-manifest.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/default-manifest.o]
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o]
         ignore line: [collect2 version 14.2.0]
-        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\leona\\AppData\\Local\\Temp\\ccIf2mBA.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_be3df.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_be3df.dir/objects.a --no-whole-archive --out-implib libcmTC_be3df.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o]
+        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\leona\\AppData\\Local\\Temp\\ccMIviDf.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_5131b.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_5131b.dir/objects.a --no-whole-archive --out-implib libcmTC_5131b.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o]
         linker tool for 'C': C:/msys64/mingw64/x86_64-w64-mingw32/bin/ld.exe
         remove lib [gcc_eh]
         remove lib [msvcrt]
@@ -2223,8 +2709,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-a3rx4u"
-      binary: "C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-a3rx4u"
+      source: "C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-bysbg0"
+      binary: "C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-bysbg0"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2234,13 +2720,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-a3rx4u'
+        Change Dir: 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-bysbg0'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_b5eec/fast
-        C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_b5eec.dir\\build.make CMakeFiles/cmTC_b5eec.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-a3rx4u'
-        Building CXX object CMakeFiles/cmTC_b5eec.dir/CMakeCXXCompilerABI.cpp.obj
-        C:\\msys64\\mingw64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_b5eec.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_09226/fast
+        C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_09226.dir\\build.make CMakeFiles/cmTC_09226.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-bysbg0'
+        Building CXX object CMakeFiles/cmTC_09226.dir/CMakeCXXCompilerABI.cpp.obj
+        C:\\msys64\\mingw64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_09226.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
         Using built-in specs.
         COLLECT_GCC=C:\\msys64\\mingw64\\bin\\c++.exe
         Target: x86_64-w64-mingw32
@@ -2248,8 +2734,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 14.2.0 (Rev3, Built by MSYS2 project) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_b5eec.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_b5eec.dir\\'
-         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/cc1plus.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_b5eec.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\leona\\AppData\\Local\\Temp\\ccE16B82.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_09226.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_09226.dir\\'
+         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/cc1plus.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_09226.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\leona\\AppData\\Local\\Temp\\ccVMRwxm.s
         GNU C++17 (Rev3, Built by MSYS2 project) version 14.2.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -2275,14 +2761,14 @@ events:
          C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/include-fixed
         End of search list.
         Compiler executable checksum: 28918c7e5d1ae734d44f45b0191a08a4
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_b5eec.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_b5eec.dir\\'
-         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_b5eec.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\leona\\AppData\\Local\\Temp\\ccE16B82.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_09226.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_09226.dir\\'
+         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_09226.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\leona\\AppData\\Local\\Temp\\ccVMRwxm.s
         GNU assembler version 2.44 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.44
         COMPILER_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_b5eec.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_b5eec.dir\\CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_b5eec.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_b5eec.dir\\link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_09226.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_09226.dir\\CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_09226.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_09226.dir\\link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=C:\\msys64\\mingw64\\bin\\c++.exe
         COLLECT_LTO_WRAPPER=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe
@@ -2293,16 +2779,16 @@ events:
         gcc version 14.2.0 (Rev3, Built by MSYS2 project) 
         COMPILER_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b5eec.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_b5eec.'
-         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\leona\\AppData\\Local\\Temp\\ccugaKC9.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_b5eec.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_b5eec.dir/objects.a --no-whole-archive --out-implib libcmTC_b5eec.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_09226.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_09226.'
+         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\leona\\AppData\\Local\\Temp\\ccnrWK6t.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_09226.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_09226.dir/objects.a --no-whole-archive --out-implib libcmTC_09226.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o
         collect2 version 14.2.0
-        C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\leona\\AppData\\Local\\Temp\\ccugaKC9.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_b5eec.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_b5eec.dir/objects.a --no-whole-archive --out-implib libcmTC_b5eec.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o
+        C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\leona\\AppData\\Local\\Temp\\ccnrWK6t.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_09226.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_09226.dir/objects.a --no-whole-archive --out-implib libcmTC_09226.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o
         GNU ld (GNU Binutils) 2.44
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b5eec.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_b5eec.'
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_b5eec.dir/objects.a
-        C:\\msys64\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_b5eec.dir/objects.a @CMakeFiles\\cmTC_b5eec.dir\\objects1.rsp
-        C:\\msys64\\mingw64\\bin\\c++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_b5eec.dir/objects.a -Wl,--no-whole-archive -o cmTC_b5eec.exe -Wl,--out-implib,libcmTC_b5eec.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        mingw32-make[1]: Leaving directory 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-a3rx4u'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_09226.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_09226.'
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_09226.dir/objects.a
+        C:\\msys64\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_09226.dir/objects.a @CMakeFiles\\cmTC_09226.dir\\objects1.rsp
+        C:\\msys64\\mingw64\\bin\\c++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_09226.dir/objects.a -Wl,--no-whole-archive -o cmTC_09226.exe -Wl,--out-implib,libcmTC_09226.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make[1]: Leaving directory 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-bysbg0'
         
       exitCode: 0
   -
@@ -2341,13 +2827,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-a3rx4u']
+        ignore line: [Change Dir: 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-bysbg0']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_b5eec/fast]
-        ignore line: [C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_b5eec.dir\\build.make CMakeFiles/cmTC_b5eec.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-a3rx4u']
-        ignore line: [Building CXX object CMakeFiles/cmTC_b5eec.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [C:\\msys64\\mingw64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_b5eec.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"]
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_09226/fast]
+        ignore line: [C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_09226.dir\\build.make CMakeFiles/cmTC_09226.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-bysbg0']
+        ignore line: [Building CXX object CMakeFiles/cmTC_09226.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [C:\\msys64\\mingw64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_09226.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\msys64\\mingw64\\bin\\c++.exe]
         ignore line: [Target: x86_64-w64-mingw32]
@@ -2355,8 +2841,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 14.2.0 (Rev3  Built by MSYS2 project) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_b5eec.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_b5eec.dir\\']
-        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/cc1plus.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_b5eec.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\leona\\AppData\\Local\\Temp\\ccE16B82.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_09226.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_09226.dir\\']
+        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/cc1plus.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_09226.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\leona\\AppData\\Local\\Temp\\ccVMRwxm.s]
         ignore line: [GNU C++17 (Rev3  Built by MSYS2 project) version 14.2.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -2382,8 +2868,8 @@ events:
         ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/include-fixed]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 28918c7e5d1ae734d44f45b0191a08a4]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_b5eec.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_b5eec.dir\\']
-        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_b5eec.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\leona\\AppData\\Local\\Temp\\ccE16B82.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_09226.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_09226.dir\\']
+        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_09226.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\leona\\AppData\\Local\\Temp\\ccVMRwxm.s]
         ignore line: [GNU assembler version 2.44 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.44]
         ignore line: [COMPILER_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/]
@@ -2394,9 +2880,9 @@ events:
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_b5eec.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_b5eec.dir\\CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_b5eec.exe]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_b5eec.dir\\link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_09226.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_09226.dir\\CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_09226.exe]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_09226.dir\\link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\msys64\\mingw64\\bin\\c++.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe]
@@ -2414,13 +2900,13 @@ events:
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b5eec.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_b5eec.']
-        link line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\leona\\AppData\\Local\\Temp\\ccugaKC9.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_b5eec.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_b5eec.dir/objects.a --no-whole-archive --out-implib libcmTC_b5eec.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_09226.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_09226.']
+        link line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\leona\\AppData\\Local\\Temp\\ccnrWK6t.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_09226.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_09226.dir/objects.a --no-whole-archive --out-implib libcmTC_09226.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o]
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\leona\\AppData\\Local\\Temp\\ccugaKC9.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\leona\\AppData\\Local\\Temp\\ccnrWK6t.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
@@ -2442,7 +2928,7 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_b5eec.exe] ==> ignore
+          arg [cmTC_09226.exe] ==> ignore
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/crt2.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/crt2.o]
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o]
           arg [-LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0] ==> dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0]
@@ -2453,10 +2939,10 @@ events:
           arg [-LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../..] ==> dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../..]
           arg [-v] ==> ignore
           arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_b5eec.dir/objects.a] ==> ignore
+          arg [CMakeFiles\\cmTC_09226.dir/objects.a] ==> ignore
           arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_b5eec.dll.a] ==> ignore
+          arg [libcmTC_09226.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -2482,7 +2968,7 @@ events:
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/default-manifest.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/default-manifest.o]
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o]
         ignore line: [collect2 version 14.2.0]
-        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\leona\\AppData\\Local\\Temp\\ccugaKC9.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_b5eec.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_b5eec.dir/objects.a --no-whole-archive --out-implib libcmTC_b5eec.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o]
+        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\leona\\AppData\\Local\\Temp\\ccnrWK6t.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_09226.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_09226.dir/objects.a --no-whole-archive --out-implib libcmTC_09226.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o]
         linker tool for 'CXX': C:/msys64/mingw64/x86_64-w64-mingw32/bin/ld.exe
         remove lib [msvcrt]
         remove lib [msvcrt]
@@ -2527,8 +3013,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-3w3xng"
-      binary: "C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-3w3xng"
+      source: "C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-rwf0oi"
+      binary: "C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-rwf0oi"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -2538,19 +3024,19 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-3w3xng'
+        Change Dir: 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-rwf0oi'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_d062e/fast
-        C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_d062e.dir\\build.make CMakeFiles/cmTC_d062e.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-3w3xng'
-        Building C object CMakeFiles/cmTC_d062e.dir/src.c.obj
-        C:\\msys64\\mingw64\\bin\\cc.exe -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles\\cmTC_d062e.dir\\src.c.obj -c C:\\Users\\leona\\Desktop\\config_app\\config_app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3w3xng\\src.c
-        Linking C executable cmTC_d062e.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_d062e.dir\\link.txt --verbose=1
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_d062e.dir/objects.a
-        C:\\msys64\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_d062e.dir/objects.a @CMakeFiles\\cmTC_d062e.dir\\objects1.rsp
-        C:\\msys64\\mingw64\\bin\\cc.exe -Wl,--whole-archive CMakeFiles\\cmTC_d062e.dir/objects.a -Wl,--no-whole-archive -o cmTC_d062e.exe -Wl,--out-implib,libcmTC_d062e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_d062e.dir\\linkLibs.rsp
-        mingw32-make[1]: Leaving directory 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-3w3xng'
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_ddfd7/fast
+        C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_ddfd7.dir\\build.make CMakeFiles/cmTC_ddfd7.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-rwf0oi'
+        Building C object CMakeFiles/cmTC_ddfd7.dir/src.c.obj
+        C:\\msys64\\mingw64\\bin\\cc.exe -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles\\cmTC_ddfd7.dir\\src.c.obj -c C:\\Users\\leona\\Desktop\\config_app\\config_app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rwf0oi\\src.c
+        Linking C executable cmTC_ddfd7.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_ddfd7.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_ddfd7.dir/objects.a
+        C:\\msys64\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_ddfd7.dir/objects.a @CMakeFiles\\cmTC_ddfd7.dir\\objects1.rsp
+        C:\\msys64\\mingw64\\bin\\cc.exe -Wl,--whole-archive CMakeFiles\\cmTC_ddfd7.dir/objects.a -Wl,--no-whole-archive -o cmTC_ddfd7.exe -Wl,--out-implib,libcmTC_ddfd7.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_ddfd7.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-rwf0oi'
         
       exitCode: 0
   -
@@ -2568,8 +3054,8 @@ events:
     checks:
       - "Performing Test HAVE_STDATOMIC"
     directories:
-      source: "C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-8pkj7y"
-      binary: "C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-8pkj7y"
+      source: "C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-71f8x3"
+      binary: "C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-71f8x3"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2579,19 +3065,19 @@ events:
       variable: "HAVE_STDATOMIC"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-8pkj7y'
+        Change Dir: 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-71f8x3'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_27525/fast
-        C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_27525.dir\\build.make CMakeFiles/cmTC_27525.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-8pkj7y'
-        Building CXX object CMakeFiles/cmTC_27525.dir/src.cxx.obj
-        C:\\msys64\\mingw64\\bin\\c++.exe -DHAVE_STDATOMIC  -std=gnu++17 -o CMakeFiles\\cmTC_27525.dir\\src.cxx.obj -c C:\\Users\\leona\\Desktop\\config_app\\config_app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8pkj7y\\src.cxx
-        Linking CXX executable cmTC_27525.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_27525.dir\\link.txt --verbose=1
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_27525.dir/objects.a
-        C:\\msys64\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_27525.dir/objects.a @CMakeFiles\\cmTC_27525.dir\\objects1.rsp
-        C:\\msys64\\mingw64\\bin\\c++.exe -Wl,--whole-archive CMakeFiles\\cmTC_27525.dir/objects.a -Wl,--no-whole-archive -o cmTC_27525.exe -Wl,--out-implib,libcmTC_27525.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_27525.dir\\linkLibs.rsp
-        mingw32-make[1]: Leaving directory 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-8pkj7y'
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_1abe2/fast
+        C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_1abe2.dir\\build.make CMakeFiles/cmTC_1abe2.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-71f8x3'
+        Building CXX object CMakeFiles/cmTC_1abe2.dir/src.cxx.obj
+        C:\\msys64\\mingw64\\bin\\c++.exe -DHAVE_STDATOMIC  -std=gnu++17 -o CMakeFiles\\cmTC_1abe2.dir\\src.cxx.obj -c C:\\Users\\leona\\Desktop\\config_app\\config_app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71f8x3\\src.cxx
+        Linking CXX executable cmTC_1abe2.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_1abe2.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_1abe2.dir/objects.a
+        C:\\msys64\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_1abe2.dir/objects.a @CMakeFiles\\cmTC_1abe2.dir\\objects1.rsp
+        C:\\msys64\\mingw64\\bin\\c++.exe -Wl,--whole-archive CMakeFiles\\cmTC_1abe2.dir/objects.a -Wl,--no-whole-archive -o cmTC_1abe2.exe -Wl,--out-implib,libcmTC_1abe2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_1abe2.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/CMakeScratch/TryCompile-71f8x3'
         
       exitCode: 0
   -
@@ -2661,7 +3147,20 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -2677,12 +3176,14 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigGUI"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigurationGUI"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/ConfigGUI"
+        - "C:/Program Files (x86)/ConfigurationGUI"
   -
     kind: "find_package-v1"
     backtrace:
@@ -2751,7 +3252,20 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -2767,12 +3281,14 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigGUI"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigurationGUI"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/ConfigGUI"
+        - "C:/Program Files (x86)/ConfigurationGUI"
   -
     kind: "find_package-v1"
     backtrace:
@@ -2841,7 +3357,20 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -2857,12 +3386,14 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigGUI"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigurationGUI"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/ConfigGUI"
+        - "C:/Program Files (x86)/ConfigurationGUI"
   -
     kind: "find_package-v1"
     backtrace:
@@ -2928,7 +3459,20 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -2944,12 +3488,14 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigGUI"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigurationGUI"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/ConfigGUI"
+        - "C:/Program Files (x86)/ConfigurationGUI"
   -
     kind: "find-v1"
     backtrace:
@@ -2985,11 +3531,14 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Git/cmd/"
       - "C:/NR/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Go/bin/"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/leona/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/leona/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/leona/AppData/Local/Programs/cursor/resources/app/bin/"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/"
+      - "C:/Users/leona/go/bin/"
       - "C:/Program Files/bin/"
       - "C:/Program Files/sbin/"
       - "C:/Program Files/"
@@ -2999,16 +3548,29 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/CMake/sbin/"
       - "C:/Program Files/CMake/"
-      - "C:/Program Files (x86)/ConfigGUI/bin/"
-      - "C:/Program Files (x86)/ConfigGUI/sbin/"
-      - "C:/Program Files (x86)/ConfigGUI/"
+      - "C:/Program Files (x86)/ConfigurationGUI/bin/"
+      - "C:/Program Files (x86)/ConfigurationGUI/sbin/"
+      - "C:/Program Files (x86)/ConfigurationGUI/"
     searched_directories:
       - "C:/Qt/6.9.1/mingw_64/bin/windeployqt.com"
     found: "C:/Qt/6.9.1/mingw_64/bin/windeployqt.exe"
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -3024,12 +3586,14 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigGUI"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigurationGUI"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/ConfigGUI"
+        - "C:/Program Files (x86)/ConfigurationGUI"
   -
     kind: "find_package-v1"
     backtrace:
@@ -3091,7 +3655,20 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -3107,12 +3684,14 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigGUI"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigurationGUI"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/ConfigGUI"
+        - "C:/Program Files (x86)/ConfigurationGUI"
   -
     kind: "find_package-v1"
     backtrace:
@@ -3183,7 +3762,20 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -3199,12 +3791,14 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigGUI"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigurationGUI"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/ConfigGUI"
+        - "C:/Program Files (x86)/ConfigurationGUI"
   -
     kind: "find_package-v1"
     backtrace:
@@ -3272,7 +3866,20 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -3288,12 +3895,14 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigGUI"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigurationGUI"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/ConfigGUI"
+        - "C:/Program Files (x86)/ConfigurationGUI"
   -
     kind: "find-v1"
     backtrace:
@@ -3334,19 +3943,22 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Git/cmd/"
       - "C:/NR/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Go/bin/"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/leona/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/leona/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/leona/AppData/Local/Programs/cursor/resources/app/bin/"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/"
+      - "C:/Users/leona/go/bin/"
       - "C:/Program Files/include/"
       - "C:/Program Files/"
       - "C:/Program Files (x86)/include/"
       - "C:/Program Files (x86)/"
       - "C:/Program Files/CMake/include/"
       - "C:/Program Files/CMake/"
-      - "C:/Program Files (x86)/ConfigGUI/include/"
-      - "C:/Program Files (x86)/ConfigGUI/"
+      - "C:/Program Files (x86)/ConfigurationGUI/include/"
+      - "C:/Program Files (x86)/ConfigurationGUI/"
     searched_directories:
       - "C:/Qt/6.9.1/mingw_64/include/vulkan/vulkan.h"
       - "C:/Qt/6.9.1/mingw_64/vulkan/vulkan.h"
@@ -3360,24 +3972,40 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/vulkan/vulkan.h"
       - "C:/Program Files/Git/cmd/vulkan/vulkan.h"
       - "C:/NR/vulkan/vulkan.h"
+      - "C:/Program Files/CMake/bin/vulkan/vulkan.h"
+      - "C:/Program Files/Go/bin/vulkan/vulkan.h"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/vulkan/vulkan.h"
       - "C:/Users/leona/AppData/Local/Microsoft/WindowsApps/vulkan/vulkan.h"
       - "C:/Users/leona/AppData/Local/Programs/Microsoft VS Code/bin/vulkan/vulkan.h"
       - "C:/Users/leona/AppData/Local/Programs/cursor/resources/app/bin/vulkan/vulkan.h"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/vulkan/vulkan.h"
+      - "C:/Users/leona/go/bin/vulkan/vulkan.h"
       - "C:/Program Files/include/vulkan/vulkan.h"
       - "C:/Program Files/vulkan/vulkan.h"
       - "C:/Program Files (x86)/include/vulkan/vulkan.h"
       - "C:/Program Files (x86)/vulkan/vulkan.h"
       - "C:/Program Files/CMake/include/vulkan/vulkan.h"
       - "C:/Program Files/CMake/vulkan/vulkan.h"
-      - "C:/Program Files (x86)/ConfigGUI/include/vulkan/vulkan.h"
-      - "C:/Program Files (x86)/ConfigGUI/vulkan/vulkan.h"
+      - "C:/Program Files (x86)/ConfigurationGUI/include/vulkan/vulkan.h"
+      - "C:/Program Files (x86)/ConfigurationGUI/vulkan/vulkan.h"
     found: false
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -3393,12 +4021,14 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigGUI"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigurationGUI"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/ConfigGUI"
+        - "C:/Program Files (x86)/ConfigurationGUI"
   -
     kind: "find-v1"
     backtrace:
@@ -3440,21 +4070,23 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Git/cmd/"
       - "C:/NR/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Go/bin/"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/leona/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/leona/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/leona/AppData/Local/Programs/cursor/resources/app/bin/"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/"
+      - "C:/Users/leona/go/bin/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/"
       - "C:/Program Files (x86)/lib/"
       - "C:/Program Files (x86)/"
       - "C:/Program Files/CMake/lib/"
       - "C:/Program Files/CMake/"
-      - "C:/Program Files (x86)/ConfigGUI/lib/"
-      - "C:/Program Files (x86)/ConfigGUI/"
-      - "C:/Program Files (x86)/ConfigGUI/bin/"
-      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/ConfigurationGUI/lib/"
+      - "C:/Program Files (x86)/ConfigurationGUI/"
+      - "C:/Program Files (x86)/ConfigurationGUI/bin/"
     searched_directories:
       - "C:/Qt/6.9.1/mingw_64/lib/"
       - "C:/Qt/6.9.1/mingw_64/"
@@ -3469,26 +4101,41 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Git/cmd/"
       - "C:/NR/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Go/bin/"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/leona/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/leona/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/leona/AppData/Local/Programs/cursor/resources/app/bin/"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/"
+      - "C:/Users/leona/go/bin/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/"
       - "C:/Program Files (x86)/lib/"
       - "C:/Program Files (x86)/"
       - "C:/Program Files/CMake/lib/"
       - "C:/Program Files/CMake/"
-      - "C:/Program Files (x86)/ConfigGUI/lib/"
-      - "C:/Program Files (x86)/ConfigGUI/"
-      - "C:/Program Files (x86)/ConfigGUI/bin/"
-      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/ConfigurationGUI/lib/"
+      - "C:/Program Files (x86)/ConfigurationGUI/"
+      - "C:/Program Files (x86)/ConfigurationGUI/bin/"
     found: false
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -3504,14 +4151,16 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigGUI"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigurationGUI"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/ConfigGUI"
+        - "C:/Program Files (x86)/ConfigurationGUI"
       CMAKE_SYSTEM_LIBRARY_PATH:
-        - "C:/Program Files (x86)/ConfigGUI/bin"
+        - "C:/Program Files (x86)/ConfigurationGUI/bin"
         - "C:/Program Files/CMake/bin"
         - "/bin"
   -
@@ -3555,11 +4204,14 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Git/cmd/"
       - "C:/NR/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Go/bin/"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/leona/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/leona/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/leona/AppData/Local/Programs/cursor/resources/app/bin/"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/"
+      - "C:/Users/leona/go/bin/"
       - "C:/Program Files/bin/"
       - "C:/Program Files/sbin/"
       - "C:/Program Files/"
@@ -3569,9 +4221,9 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/CMake/sbin/"
       - "C:/Program Files/CMake/"
-      - "C:/Program Files (x86)/ConfigGUI/bin/"
-      - "C:/Program Files (x86)/ConfigGUI/sbin/"
-      - "C:/Program Files (x86)/ConfigGUI/"
+      - "C:/Program Files (x86)/ConfigurationGUI/bin/"
+      - "C:/Program Files (x86)/ConfigurationGUI/sbin/"
+      - "C:/Program Files (x86)/ConfigurationGUI/"
     searched_directories:
       - "C:/Qt/6.9.1/mingw_64/bin/glslc.com"
       - "C:/Qt/6.9.1/mingw_64/bin/glslc.exe"
@@ -3612,6 +4264,12 @@ events:
       - "C:/NR/glslc.com"
       - "C:/NR/glslc.exe"
       - "C:/NR/glslc"
+      - "C:/Program Files/CMake/bin/glslc.com"
+      - "C:/Program Files/CMake/bin/glslc.exe"
+      - "C:/Program Files/CMake/bin/glslc"
+      - "C:/Program Files/Go/bin/glslc.com"
+      - "C:/Program Files/Go/bin/glslc.exe"
+      - "C:/Program Files/Go/bin/glslc"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/glslc.com"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/glslc.exe"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/glslc"
@@ -3627,6 +4285,9 @@ events:
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/glslc.com"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/glslc.exe"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/glslc"
+      - "C:/Users/leona/go/bin/glslc.com"
+      - "C:/Users/leona/go/bin/glslc.exe"
+      - "C:/Users/leona/go/bin/glslc"
       - "C:/Program Files/bin/glslc.com"
       - "C:/Program Files/bin/glslc.exe"
       - "C:/Program Files/bin/glslc"
@@ -3654,20 +4315,33 @@ events:
       - "C:/Program Files/CMake/glslc.com"
       - "C:/Program Files/CMake/glslc.exe"
       - "C:/Program Files/CMake/glslc"
-      - "C:/Program Files (x86)/ConfigGUI/bin/glslc.com"
-      - "C:/Program Files (x86)/ConfigGUI/bin/glslc.exe"
-      - "C:/Program Files (x86)/ConfigGUI/bin/glslc"
-      - "C:/Program Files (x86)/ConfigGUI/sbin/glslc.com"
-      - "C:/Program Files (x86)/ConfigGUI/sbin/glslc.exe"
-      - "C:/Program Files (x86)/ConfigGUI/sbin/glslc"
-      - "C:/Program Files (x86)/ConfigGUI/glslc.com"
-      - "C:/Program Files (x86)/ConfigGUI/glslc.exe"
-      - "C:/Program Files (x86)/ConfigGUI/glslc"
+      - "C:/Program Files (x86)/ConfigurationGUI/bin/glslc.com"
+      - "C:/Program Files (x86)/ConfigurationGUI/bin/glslc.exe"
+      - "C:/Program Files (x86)/ConfigurationGUI/bin/glslc"
+      - "C:/Program Files (x86)/ConfigurationGUI/sbin/glslc.com"
+      - "C:/Program Files (x86)/ConfigurationGUI/sbin/glslc.exe"
+      - "C:/Program Files (x86)/ConfigurationGUI/sbin/glslc"
+      - "C:/Program Files (x86)/ConfigurationGUI/glslc.com"
+      - "C:/Program Files (x86)/ConfigurationGUI/glslc.exe"
+      - "C:/Program Files (x86)/ConfigurationGUI/glslc"
     found: false
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -3683,12 +4357,14 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigGUI"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigurationGUI"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/ConfigGUI"
+        - "C:/Program Files (x86)/ConfigurationGUI"
   -
     kind: "find-v1"
     backtrace:
@@ -3730,11 +4406,14 @@ events:
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/Git/cmd/"
       - "C:/NR/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Go/bin/"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/"
       - "C:/Users/leona/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/leona/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/leona/AppData/Local/Programs/cursor/resources/app/bin/"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/"
+      - "C:/Users/leona/go/bin/"
       - "C:/Program Files/bin/"
       - "C:/Program Files/sbin/"
       - "C:/Program Files/"
@@ -3744,9 +4423,9 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/CMake/sbin/"
       - "C:/Program Files/CMake/"
-      - "C:/Program Files (x86)/ConfigGUI/bin/"
-      - "C:/Program Files (x86)/ConfigGUI/sbin/"
-      - "C:/Program Files (x86)/ConfigGUI/"
+      - "C:/Program Files (x86)/ConfigurationGUI/bin/"
+      - "C:/Program Files (x86)/ConfigurationGUI/sbin/"
+      - "C:/Program Files (x86)/ConfigurationGUI/"
     searched_directories:
       - "C:/Qt/6.9.1/mingw_64/bin/glslangValidator.com"
       - "C:/Qt/6.9.1/mingw_64/bin/glslangValidator.exe"
@@ -3787,6 +4466,12 @@ events:
       - "C:/NR/glslangValidator.com"
       - "C:/NR/glslangValidator.exe"
       - "C:/NR/glslangValidator"
+      - "C:/Program Files/CMake/bin/glslangValidator.com"
+      - "C:/Program Files/CMake/bin/glslangValidator.exe"
+      - "C:/Program Files/CMake/bin/glslangValidator"
+      - "C:/Program Files/Go/bin/glslangValidator.com"
+      - "C:/Program Files/Go/bin/glslangValidator.exe"
+      - "C:/Program Files/Go/bin/glslangValidator"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/glslangValidator.com"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/glslangValidator.exe"
       - "C:/Users/leona/AppData/Local/Programs/Python/Python313/glslangValidator"
@@ -3802,6 +4487,9 @@ events:
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/glslangValidator.com"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/glslangValidator.exe"
       - "C:/Users/leona/AppData/Local/Programs/u-center2/utilities/glslangValidator"
+      - "C:/Users/leona/go/bin/glslangValidator.com"
+      - "C:/Users/leona/go/bin/glslangValidator.exe"
+      - "C:/Users/leona/go/bin/glslangValidator"
       - "C:/Program Files/bin/glslangValidator.com"
       - "C:/Program Files/bin/glslangValidator.exe"
       - "C:/Program Files/bin/glslangValidator"
@@ -3829,20 +4517,33 @@ events:
       - "C:/Program Files/CMake/glslangValidator.com"
       - "C:/Program Files/CMake/glslangValidator.exe"
       - "C:/Program Files/CMake/glslangValidator"
-      - "C:/Program Files (x86)/ConfigGUI/bin/glslangValidator.com"
-      - "C:/Program Files (x86)/ConfigGUI/bin/glslangValidator.exe"
-      - "C:/Program Files (x86)/ConfigGUI/bin/glslangValidator"
-      - "C:/Program Files (x86)/ConfigGUI/sbin/glslangValidator.com"
-      - "C:/Program Files (x86)/ConfigGUI/sbin/glslangValidator.exe"
-      - "C:/Program Files (x86)/ConfigGUI/sbin/glslangValidator"
-      - "C:/Program Files (x86)/ConfigGUI/glslangValidator.com"
-      - "C:/Program Files (x86)/ConfigGUI/glslangValidator.exe"
-      - "C:/Program Files (x86)/ConfigGUI/glslangValidator"
+      - "C:/Program Files (x86)/ConfigurationGUI/bin/glslangValidator.com"
+      - "C:/Program Files (x86)/ConfigurationGUI/bin/glslangValidator.exe"
+      - "C:/Program Files (x86)/ConfigurationGUI/bin/glslangValidator"
+      - "C:/Program Files (x86)/ConfigurationGUI/sbin/glslangValidator.com"
+      - "C:/Program Files (x86)/ConfigurationGUI/sbin/glslangValidator.exe"
+      - "C:/Program Files (x86)/ConfigurationGUI/sbin/glslangValidator"
+      - "C:/Program Files (x86)/ConfigurationGUI/glslangValidator.com"
+      - "C:/Program Files (x86)/ConfigurationGUI/glslangValidator.exe"
+      - "C:/Program Files (x86)/ConfigurationGUI/glslangValidator"
     found: false
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -3858,12 +4559,14 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigGUI"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigurationGUI"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/ConfigGUI"
+        - "C:/Program Files (x86)/ConfigurationGUI"
   -
     kind: "find_package-v1"
     backtrace:
@@ -3933,7 +4636,20 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -3949,12 +4665,14 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigGUI"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigurationGUI"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/ConfigGUI"
+        - "C:/Program Files (x86)/ConfigurationGUI"
   -
     kind: "find_package-v1"
     backtrace:
@@ -4023,7 +4741,20 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -4039,12 +4770,14 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigGUI"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigurationGUI"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/ConfigGUI"
+        - "C:/Program Files (x86)/ConfigurationGUI"
   -
     kind: "find_package-v1"
     backtrace:
@@ -4110,7 +4843,20 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -4126,12 +4872,14 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigGUI"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigurationGUI"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/ConfigGUI"
+        - "C:/Program Files (x86)/ConfigurationGUI"
   -
     kind: "find_package-v1"
     backtrace:
@@ -4193,7 +4941,20 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -4209,12 +4970,116 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigGUI"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigurationGUI"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/ConfigGUI"
+        - "C:/Program Files (x86)/ConfigurationGUI"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6SerialPort/Qt6SerialPortConfig.cmake:85 (find_package)"
+      - "C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6/Qt6Config.cmake:218 (find_package)"
+      - "CMakeLists.txt:8 (find_package)"
+    name: "Qt6SerialPortPrivate"
+    configs:
+      -
+        filename: "Qt6SerialPortPrivateConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "qt6serialportprivate-config.cmake"
+        kind: "cmake"
+    version_request:
+      version: "6.9.1"
+      version_complete: "6.9.1"
+      exact: true
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "Qt6SerialPortPrivate"
+      search_paths:
+        - "C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6SerialPort/.."
+        - "C:/Qt/6.9.1/mingw_64/lib/cmake"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: false
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/pkgRedirects/Qt6SerialPortPrivateConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/leona/Desktop/config_app/config_app/build/CMakeFiles/pkgRedirects/qt6serialportprivate-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6SerialPortPrivateConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Qt/6.9.1/mingw_64/lib/cmake/qt6serialportprivate-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6SerialPortPrivate/Qt6SerialPortPrivateConfig.cmake"
+      mode: "config"
+      version: "6.9.1"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Users\\leona\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\leona\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\leona\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\NR"
+        - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigurationGUI"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/ConfigurationGUI"
   -
     kind: "find_package-v1"
     backtrace:
@@ -4269,11 +5134,27 @@ events:
         path: "C:/Qt/6.9.1/mingw_64/lib/cmake/qt6serialport-config.cmake"
         mode: "config"
         reason: "no_exist"
-    found: null
+    found:
+      path: "C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6SerialPort/Qt6SerialPortConfig.cmake"
+      mode: "config"
+      version: "6.9.1"
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -4289,12 +5170,14 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigGUI"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigurationGUI"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/ConfigGUI"
+        - "C:/Program Files (x86)/ConfigurationGUI"
   -
     kind: "find_package-v1"
     backtrace:
@@ -4366,7 +5249,20 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:\\Qt\\6.9.1\\mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.9.1\\mingw_64"
       ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\NR"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Go\\bin"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -4382,12 +5278,14 @@ events:
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\NR"
         - "C:\\Users\\leona\\AppData\\Local\\Programs\\u-center2\\utilities"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigGUI"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\leona\\go\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ConfigurationGUI"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/ConfigGUI"
+        - "C:/Program Files (x86)/ConfigurationGUI"
       CMAKE_MODULE_PATH:
         - "C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6"
         - "C:/Qt/6.9.1/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"

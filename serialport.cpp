@@ -67,10 +67,10 @@ bool SerialPort::open(const QString &portName, int baudRate)
         return false;
     }
 
-    // Set timeouts - Nordic chips often need more aggressive settings
+    // Set timeouts - Optimized for robust line reconstruction
     COMMTIMEOUTS timeouts = {0};
-    timeouts.ReadIntervalTimeout = 5;            // Very short for Nordic
-    timeouts.ReadTotalTimeoutConstant = 5;       // Very short for Nordic
+    timeouts.ReadIntervalTimeout = 5;            // Shorter for faster response
+    timeouts.ReadTotalTimeoutConstant = 5;       // Shorter for faster response
     timeouts.ReadTotalTimeoutMultiplier = 1;
     timeouts.WriteTotalTimeoutConstant = 2000;   // Longer write timeout for Nordic
     timeouts.WriteTotalTimeoutMultiplier = 0;
@@ -326,8 +326,8 @@ QByteArray SerialPort::readAll()
         return data;
     }
 
-    // Read available data in chunks for better responsiveness
-    const int maxChunkSize = 256; // Smaller chunks for faster processing
+    // Read available data in optimal chunks for robust line reconstruction
+    const int maxChunkSize = 8192; // 8KB chunks for better line integrity
     char buffer[maxChunkSize];
     
     while (true) {
@@ -350,7 +350,7 @@ QByteArray SerialPort::readAll()
             break;
         }
         
-        // Small delay to prevent blocking
+        // Minimal delay to prevent blocking while maintaining line integrity
         if (bytesRead < bytesToRead) {
             Sleep(1);
         }

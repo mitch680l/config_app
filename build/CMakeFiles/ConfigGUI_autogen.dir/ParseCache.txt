@@ -49,12 +49,15 @@ C:/Users/leona/Desktop/config_app/config_app/mainwindow.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtCore/qdatetime.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtCore/qdeadlinetimer.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtCore/qdebug.h
+ mdp:C:/Qt/6.9.1/mingw_64/include/QtCore/qdir.h
+ mdp:C:/Qt/6.9.1/mingw_64/include/QtCore/qdirlisting.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtCore/qelapsedtimer.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtCore/qendian.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtCore/qeventloop.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtCore/qexceptionhandling.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtCore/qfile.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtCore/qfiledevice.h
+ mdp:C:/Qt/6.9.1/mingw_64/include/QtCore/qfileinfo.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtCore/qflags.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtCore/qfloat16.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtCore/qforeach.h
@@ -131,6 +134,7 @@ C:/Users/leona/Desktop/config_app/config_app/mainwindow.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtCore/qtextstream.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtCore/qtformat_impl.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtCore/qtimer.h
+ mdp:C:/Qt/6.9.1/mingw_64/include/QtCore/qtimezone.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtCore/qtmetamacros.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtCore/qtnoop.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtCore/qtpreprocessorsupport.h
@@ -182,35 +186,57 @@ C:/Users/leona/Desktop/config_app/config_app/mainwindow.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtGui/qvalidator.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtGui/qwindowdefs.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtGui/qwindowdefs_win.h
+ mdp:C:/Qt/6.9.1/mingw_64/include/QtSerialPort/QSerialPortInfo
+ mdp:C:/Qt/6.9.1/mingw_64/include/QtSerialPort/qserialportglobal.h
+ mdp:C:/Qt/6.9.1/mingw_64/include/QtSerialPort/qserialportinfo.h
+ mdp:C:/Qt/6.9.1/mingw_64/include/QtSerialPort/qtserialportexports.h
+ mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/QButtonGroup
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/QComboBox
+ mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/QFileDialog
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/QGroupBox
+ mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/QHBoxLayout
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/QLabel
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/QLineEdit
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/QMainWindow
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/QMenu
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/QMenuBar
+ mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/QProgressBar
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/QPushButton
+ mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/QRadioButton
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/QScrollBar
+ mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/QSplitter
+ mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/QTabWidget
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/QTextEdit
+ mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/QVBoxLayout
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/QWidget
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/qabstractbutton.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/qabstractitemdelegate.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/qabstractscrollarea.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/qabstractslider.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/qabstractspinbox.h
+ mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/qboxlayout.h
+ mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/qbuttongroup.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/qcombobox.h
+ mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/qdialog.h
+ mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/qfiledialog.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/qframe.h
+ mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/qgridlayout.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/qgroupbox.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/qlabel.h
+ mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/qlayout.h
+ mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/qlayoutitem.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/qlineedit.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/qmainwindow.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/qmenu.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/qmenubar.h
+ mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/qprogressbar.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/qpushbutton.h
+ mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/qradiobutton.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/qrubberband.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/qscrollbar.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/qsizepolicy.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/qslider.h
+ mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/qsplitter.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/qstyle.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/qstyleoption.h
  mdp:C:/Qt/6.9.1/mingw_64/include/QtWidgets/qtabbar.h

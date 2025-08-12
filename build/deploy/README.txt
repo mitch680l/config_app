@@ -8,6 +8,11 @@ Usage:
  
 Required files: 
 - ConfigGUI.exe 
-- Qt6Core.dll, Qt6Gui.dll, Qt6Widgets.dll 
+- Qt6Core.dll, Qt6Gui.dll, Qt6Widgets.dll, Qt6SerialPort.dll 
 - platforms/qwindows.dll (Windows GUI plugin) 
 - MinGW runtime DLLs 
+ 
+Features: 
+- Auto-detecting serial ports 
+- Real-time port scanning 
+- Manual refresh button 
