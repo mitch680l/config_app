@@ -35,6 +35,10 @@ MainWindow::MainWindow(QWidget *parent)
     , logFileName("config_gui.log")
     , flushTimer(new QTimer(this))
     , keymgmtTimer(new QTimer(this))
+    , isLoggedIn(false)
+    , loginTimeoutTimer(new QTimer(this))
+    , loginRetryCount(0)
+    , waitingForLoginTest(false)
 {
     setupUI();
     scanAvailablePorts();
@@ -81,6 +85,10 @@ MainWindow::MainWindow(QWidget *parent)
         }
     });
     
+    // Set up timer for login timeout
+    connect(loginTimeoutTimer, &QTimer::timeout, this, &MainWindow::handleLoginTimeout);
+    loginTimeoutTimer->setSingleShot(true);
+    
     logMessage("Configuration GUI v1.0", "[INFO] ");
     logMessage("Ready for serial communication", "[INFO] ");
     logMessage("Using Nordic serial terminal patterns", "[INFO] ");
@@ -121,7 +129,7 @@ void MainWindow::initializeLogFile()
 void MainWindow::setupUI()
 {
     setWindowTitle("Configuration GUI");
-    setGeometry(100, 100, 1200, 800); // Larger window for dual-pane layout
+    setGeometry(100, 100, 1200, 800); // Larger window for tab layout
     
     createMenuBar();
     
@@ -131,10 +139,10 @@ void MainWindow::setupUI()
     QVBoxLayout *mainLayout = new QVBoxLayout(centralWidget);
     
     createToolbar();
-    createDualPaneInterface();
+    createTabInterface();
     
     mainLayout->addWidget(toolbarWidget);
-    mainLayout->addWidget(mainSplitter);
+    mainLayout->addWidget(mainTabWidget);
 }
 
 void MainWindow::createMenuBar()
@@ -206,22 +214,95 @@ void MainWindow::createToolbar()
     
     toolbarLayout->addStretch();
     
+    // Login button
+    QPushButton *loginButton = new QPushButton("Login");
+    loginButton->setFixedWidth(60);
+    loginButton->setFixedHeight(20);
+    loginButton->setToolTip("Login to device (required for most commands)");
+    toolbarLayout->addWidget(loginButton);
+    connect(loginButton, &QPushButton::clicked, this, &MainWindow::showLoginDialog);
+    
+    toolbarLayout->addSpacing(10);
+    
     // Status indicator
     statusLabel = new QLabel("Disconnected");
     statusLabel->setStyleSheet("color: red; font-weight: bold;");
-    statusLabel->setFixedWidth(81); // 70 * 1.15 = 80.5, rounded to 81
+    statusLabel->setFixedWidth(180); // Increased width further for longer status text
     statusLabel->setFixedHeight(20);
     toolbarLayout->addWidget(statusLabel);
 }
 
-void MainWindow::createDualPaneInterface()
+void MainWindow::createTabInterface()
 {
-    // Create main splitter
-    mainSplitter = new QSplitter(Qt::Horizontal);
+    mainTabWidget = new QTabWidget;
     
-    // Left pane - Serial Terminal
-    QGroupBox *terminalGroup = new QGroupBox("Serial Terminal");
-    QVBoxLayout *terminalLayout = new QVBoxLayout(terminalGroup);
+    // Setup all tabs
+    setupMenuTab();
+    setupSerialTerminalTab();
+    setupCommandInterfaceTab();
+    setupKeyManagementTab();
+    setupConfigTab();
+    setupBackupTab();
+    
+    // Set Menu tab as default (index 0)
+    mainTabWidget->setCurrentIndex(0);
+}
+
+void MainWindow::setupMenuTab()
+{
+    menuTab = new QWidget;
+    QVBoxLayout *menuLayout = new QVBoxLayout(menuTab);
+    
+    // Welcome header
+    QLabel *welcomeLabel = new QLabel("Configuration GUI");
+    welcomeLabel->setStyleSheet("font-size: 24px; font-weight: bold; color: #2c3e50; margin: 20px;");
+    welcomeLabel->setAlignment(Qt::AlignCenter);
+    menuLayout->addWidget(welcomeLabel);
+    
+    // Description
+    QLabel *descriptionLabel = new QLabel("Welcome to the Configuration GUI for Nordic devices.\n"
+                                         "This application provides tools for device configuration, "
+                                         "certificate management, and serial communication.");
+    descriptionLabel->setStyleSheet("font-size: 14px; color: #34495e; margin: 10px;");
+    descriptionLabel->setAlignment(Qt::AlignCenter);
+    descriptionLabel->setWordWrap(true);
+    menuLayout->addWidget(descriptionLabel);
+    
+    // Available tabs info
+    QGroupBox *tabsInfoGroup = new QGroupBox("Available Features");
+    QVBoxLayout *tabsInfoLayout = new QVBoxLayout(tabsInfoGroup);
+    
+    QStringList tabDescriptions = {
+        "📡 <b>Serial Terminal:</b> Direct serial communication with the device",
+        "💻 <b>Command Interface:</b> Send shell commands and view responses",
+        "🔑 <b>Key Management:</b> Upload certificates and keys for secure communication",
+        "⚙️ <b>Config:</b> Device configuration settings (coming soon)",
+        "💾 <b>Backup:</b> Backup and restore device settings (coming soon)"
+    };
+    
+    for (const QString &desc : tabDescriptions) {
+        QLabel *tabLabel = new QLabel(desc);
+        tabLabel->setStyleSheet("font-size: 12px; margin: 5px;");
+        tabLabel->setTextFormat(Qt::RichText);
+        tabsInfoLayout->addWidget(tabLabel);
+    }
+    
+    menuLayout->addWidget(tabsInfoGroup);
+    menuLayout->addStretch();
+    
+    // Version info
+    QLabel *versionLabel = new QLabel("Version 1.0 | Nordic Configuration GUI");
+    versionLabel->setStyleSheet("font-size: 10px; color: #7f8c8d; margin: 10px;");
+    versionLabel->setAlignment(Qt::AlignCenter);
+    menuLayout->addWidget(versionLabel);
+    
+    mainTabWidget->addTab(menuTab, "Menu");
+}
+
+void MainWindow::setupSerialTerminalTab()
+{
+    serialTerminalTab = new QWidget;
+    QVBoxLayout *terminalLayout = new QVBoxLayout(serialTerminalTab);
     
     terminal = new QTextEdit;
     terminal->setReadOnly(false); // Allow text selection and copying
@@ -240,14 +321,13 @@ void MainWindow::createDualPaneInterface()
         }
     });
     
-    mainSplitter->addWidget(terminalGroup);
-    
-    // Right pane - Command Interface with Key Management
-    QTabWidget *rightTabWidget = new QTabWidget;
-    
-    // Command Interface Tab
-    QWidget *commandTab = new QWidget;
-    QVBoxLayout *commandLayout = new QVBoxLayout(commandTab);
+    mainTabWidget->addTab(serialTerminalTab, "Serial Terminal");
+}
+
+void MainWindow::setupCommandInterfaceTab()
+{
+    commandInterfaceTab = new QWidget;
+    QVBoxLayout *commandLayout = new QVBoxLayout(commandInterfaceTab);
     
     // Command input area at top
     QHBoxLayout *inputLayout = new QHBoxLayout;
@@ -285,16 +365,89 @@ void MainWindow::createDualPaneInterface()
     commandOutput->setStyleSheet("QTextEdit { background-color: #f8f8f8; }");
     commandLayout->addWidget(commandOutput);
     
-    rightTabWidget->addTab(commandTab, "Command Interface");
+    mainTabWidget->addTab(commandInterfaceTab, "Command Interface");
+}
+
+void MainWindow::setupConfigTab()
+{
+    configTab = new QWidget;
+    QVBoxLayout *configLayout = new QVBoxLayout(configTab);
     
-    // Key Management Tab
-    setupKeyManagementUI();
-    rightTabWidget->addTab(keymgmtWidget, "Key Management");
+    QLabel *comingSoonLabel = new QLabel("Configuration settings will be available in a future update.");
+    comingSoonLabel->setStyleSheet("font-size: 16px; color: #7f8c8d; margin: 50px;");
+    comingSoonLabel->setAlignment(Qt::AlignCenter);
+    configLayout->addWidget(comingSoonLabel);
     
-    mainSplitter->addWidget(rightTabWidget);
+    mainTabWidget->addTab(configTab, "Config");
+}
+
+void MainWindow::setupBackupTab()
+{
+    backupTab = new QWidget;
+    QVBoxLayout *backupLayout = new QVBoxLayout(backupTab);
     
-    // Set initial splitter sizes (60% left, 40% right)
-    mainSplitter->setSizes({600, 400});
+    // Header
+    QLabel *headerLabel = new QLabel("Backup & Restore");
+    headerLabel->setStyleSheet("font-size: 18px; font-weight: bold; color: #2c3e50; margin: 10px;");
+    headerLabel->setAlignment(Qt::AlignCenter);
+    backupLayout->addWidget(headerLabel);
+    
+    // Explanation
+    QLabel *explanationLabel = new QLabel(
+        "This section allows you to backup and restore device configurations.\n\n"
+        "<b>Slot 0:</b> Primary slot (currently active configuration)\n"
+        "<b>Slot 1:</b> Backup slot (stored backup configuration)\n\n"
+        "Use <b>Save</b> to backup your current configuration to slot 1.\n"
+        "Use <b>Restore</b> to restore the backup configuration to slot 0."
+    );
+    explanationLabel->setStyleSheet("font-size: 12px; color: #34495e; margin: 10px; padding: 10px; background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px;");
+    explanationLabel->setAlignment(Qt::AlignLeft);
+    explanationLabel->setWordWrap(true);
+    explanationLabel->setTextFormat(Qt::RichText);
+    backupLayout->addWidget(explanationLabel);
+    
+    backupLayout->addSpacing(20);
+    
+    // Save button section
+    QGroupBox *saveGroup = new QGroupBox("Save Current Configuration");
+    QVBoxLayout *saveLayout = new QVBoxLayout(saveGroup);
+    
+    QLabel *saveLabel = new QLabel("This will copy the current configuration (Slot 0) to the backup slot (Slot 1).");
+    saveLabel->setStyleSheet("font-size: 11px; color: #495057; margin: 5px;");
+    saveLabel->setWordWrap(true);
+    saveLayout->addWidget(saveLabel);
+    
+    QPushButton *saveButton = new QPushButton("Save Configuration");
+    saveButton->setStyleSheet("QPushButton { background-color: #28a745; color: white; border: none; padding: 10px; border-radius: 5px; font-weight: bold; } QPushButton:hover { background-color: #218838; } QPushButton:pressed { background-color: #1e7e34; }");
+    saveButton->setFixedHeight(40);
+    connect(saveButton, &QPushButton::clicked, this, &MainWindow::saveConfiguration);
+    saveLayout->addWidget(saveButton);
+    
+    backupLayout->addWidget(saveGroup);
+    
+    backupLayout->addSpacing(20);
+    
+    // Restore button section
+    QGroupBox *restoreGroup = new QGroupBox("Restore Backup Configuration");
+    QVBoxLayout *restoreLayout = new QVBoxLayout(restoreGroup);
+    
+    QLabel *restoreWarningLabel = new QLabel("⚠️ <b>Warning:</b> This will overwrite your current configuration with the backup. This action cannot be undone.");
+    restoreWarningLabel->setStyleSheet("font-size: 11px; color: #dc3545; margin: 5px; padding: 8px; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 3px;");
+    restoreWarningLabel->setWordWrap(true);
+    restoreWarningLabel->setTextFormat(Qt::RichText);
+    restoreLayout->addWidget(restoreWarningLabel);
+    
+    QPushButton *restoreButton = new QPushButton("Restore Configuration");
+    restoreButton->setStyleSheet("QPushButton { background-color: #dc3545; color: white; border: none; padding: 10px; border-radius: 5px; font-weight: bold; } QPushButton:hover { background-color: #c82333; } QPushButton:pressed { background-color: #bd2130; }");
+    restoreButton->setFixedHeight(40);
+    connect(restoreButton, &QPushButton::clicked, this, &MainWindow::restoreConfiguration);
+    restoreLayout->addWidget(restoreButton);
+    
+    backupLayout->addWidget(restoreGroup);
+    
+    backupLayout->addStretch();
+    
+    mainTabWidget->addTab(backupTab, "Backup");
 }
 
 void MainWindow::scanAvailablePorts()
@@ -397,14 +550,15 @@ void MainWindow::connectToPort()
     
     if (success) {
         logMessage(QString("Connected to %1 at %2 baud").arg(currentComPort, QString::number(currentBaudRate)));
-        logMessage("Nordic terminal ready for commands", "[INFO] ");
+        logMessage("Establishing connection...", "[INFO] ");
         
         isConnected = true;
+        isLoggedIn = false; // Reset login state on new connection
         connectButton->setText("Disconnect");
-        statusLabel->setText("Connected");
-        statusLabel->setStyleSheet("color: green; font-weight: bold;");
+        statusLabel->setText("Connecting...");
+        statusLabel->setStyleSheet("color: orange; font-weight: bold;");
         
-        // Start timer for data checking
+        // Start timer for data checking immediately to monitor for "messages dropped"
         dataTimer->start();
     } else {
         QMessageBox::critical(this, "Connection Error",
@@ -417,6 +571,8 @@ void MainWindow::disconnectFromPort()
     dataTimer->stop();
     serialPort->close();
     isConnected = false;
+    isLoggedIn = false; // Reset login state on disconnect
+    loginTimeoutTimer->stop(); // Stop login timeout timer
     connectButton->setText("Connect");
     statusLabel->setText("Disconnected");
     statusLabel->setStyleSheet("color: red; font-weight: bold;");
@@ -448,6 +604,11 @@ void MainWindow::sendCommand()
             
             // Reset auto-clear timer when command is sent
             resetAutoClearTimer();
+            
+            // Refresh login if we're logged in (extends timeout)
+            if (isLoggedIn) {
+                refreshLogin();
+            }
         } else {
             logMessage(QString("Send failed: wrote %1 of %2 bytes").arg(QString::number(bytesWritten), QString::number(data.size())), "[ERROR] ");
             QMessageBox::critical(this, "Send Error",
@@ -704,6 +865,9 @@ void MainWindow::parseCommandOutput(const QString &data)
     QString timestamp = QDateTime::currentDateTime().toString("hh:mm:ss");
     QString formattedOutput = QString("[%1] %2").arg(timestamp, data.trimmed());
     
+    // Check for login response
+    checkLoginResponse(data);
+    
     // Add to command output pane
     commandOutput->insertPlainText(formattedOutput + "\n");
     
@@ -876,6 +1040,13 @@ void MainWindow::uploadCertificate()
         return;
     }
     
+    if (!isLoggedIn) {
+        QMessageBox::warning(this, "Login Required", 
+            "Certificate upload requires authentication. Please login first.");
+        showLoginDialog();
+        return;
+    }
+    
     if (pemLines.isEmpty()) {
         QMessageBox::warning(this, "No File", "Please select a PEM file first.");
         return;
@@ -914,7 +1085,12 @@ void MainWindow::sendKeymgmtLine(const QString &line, int secTag, const QString 
         quotedLine = "\"" + quotedLine + "\"";
     }
     
-    QString command = QString("keymgmt put %1 %2 %3\n").arg(secTag).arg(certType).arg(quotedLine);
+    // Fix: Use "cert" instead of "certificate" for the command
+    QString commandType = certType;
+    if (commandType.toLower() == "certificate") {
+        commandType = "cert";
+    }
+    QString command = QString("keymgmt put %1 %2 %3\n").arg(secTag).arg(commandType).arg(quotedLine);
     QByteArray data = command.toUtf8();
     serialPort->write(data);
     
@@ -1172,7 +1348,7 @@ bool MainWindow::eventFilter(QObject *obj, QEvent *event)
     return QMainWindow::eventFilter(obj, event);
 }
 
-void MainWindow::setupKeyManagementUI()
+void MainWindow::setupKeyManagementTab()
 {
     keymgmtWidget = new QWidget;
     QVBoxLayout *keymgmtLayout = new QVBoxLayout(keymgmtWidget);
@@ -1245,6 +1421,8 @@ void MainWindow::setupKeyManagementUI()
     keymgmtLayout->addWidget(uploadProgress);
     keymgmtLayout->addWidget(keymgmtStatus);
     keymgmtLayout->addStretch();
+    
+    mainTabWidget->addTab(keymgmtWidget, "Key Management");
 }
 
 bool MainWindow::isLikelyCorruptedLogLine(const QString &line)
@@ -1288,4 +1466,399 @@ bool MainWindow::isLikelyCorruptedLogLine(const QString &line)
     
     // Everything else is considered a legitimate command response
     return false;
+}
+
+void MainWindow::saveConfiguration()
+{
+    if (!isConnected) {
+        QMessageBox::warning(this, "Not Connected", "Please connect to the device first.");
+        return;
+    }
+    
+    // Show confirmation dialog
+    QMessageBox::StandardButton reply = QMessageBox::question(this, "Save Configuration", 
+        "This will copy the current configuration (Slot 0) to the backup slot (Slot 1).\n\n"
+        "Do you want to proceed?",
+        QMessageBox::Yes | QMessageBox::No);
+    
+    if (reply == QMessageBox::Yes) {
+        // Send backup command: backup copyinto 0 1
+        QString command = "backup copyinto 0 1\n";
+        QByteArray data = command.toUtf8();
+        serialPort->write(data);
+        
+        logMessage("Sending backup command: backup copyinto 0 1", "> ");
+        logMessage("Configuration backup initiated", "[INFO] ");
+        
+        // Reset auto-clear timer
+        resetAutoClearTimer();
+    }
+}
+
+void MainWindow::showLoginDialog()
+{
+    if (!isConnected) {
+        QMessageBox::warning(this, "Not Connected", "Please connect to the device first.");
+        return;
+    }
+    
+    // Create custom dialog
+    QDialog *loginDialog = new QDialog(this);
+    loginDialog->setWindowTitle("Device Login");
+    loginDialog->setModal(true);
+    loginDialog->setFixedSize(350, 200);
+    
+    QVBoxLayout *dialogLayout = new QVBoxLayout(loginDialog);
+    
+    // Title
+    QLabel *titleLabel = new QLabel("Enter Device Password");
+    titleLabel->setStyleSheet("font-size: 14px; font-weight: bold; color: #2c3e50;");
+    titleLabel->setAlignment(Qt::AlignCenter);
+    dialogLayout->addWidget(titleLabel);
+    
+    // Password input
+    QLabel *passwordLabel = new QLabel("Password:");
+    QLineEdit *passwordInput = new QLineEdit;
+    passwordInput->setEchoMode(QLineEdit::Password);
+    passwordInput->setPlaceholderText("Enter device password");
+    
+    QHBoxLayout *inputLayout = new QHBoxLayout;
+    inputLayout->addWidget(passwordLabel);
+    inputLayout->addWidget(passwordInput);
+    dialogLayout->addLayout(inputLayout);
+    
+    // Status label
+    QLabel *statusLabel = new QLabel("Ready to login");
+    statusLabel->setStyleSheet("color: blue; font-size: 11px;");
+    statusLabel->setAlignment(Qt::AlignCenter);
+    dialogLayout->addWidget(statusLabel);
+    
+    // Buttons
+    QHBoxLayout *buttonLayout = new QHBoxLayout;
+    
+    QPushButton *loginButton = new QPushButton("Login");
+    QPushButton *retryButton = new QPushButton("Retry");
+    QPushButton *closeButton = new QPushButton("Close");
+    
+    loginButton->setDefault(true);
+    retryButton->setEnabled(false);
+    
+    buttonLayout->addWidget(loginButton);
+    buttonLayout->addWidget(retryButton);
+    buttonLayout->addWidget(closeButton);
+    dialogLayout->addLayout(buttonLayout);
+    
+    // Connect signals
+    connect(closeButton, &QPushButton::clicked, loginDialog, &QDialog::reject);
+    connect(loginButton, &QPushButton::clicked, [=]() {
+        QString password = passwordInput->text();
+        if (password.isEmpty()) {
+            statusLabel->setText("Please enter a password");
+            statusLabel->setStyleSheet("color: red; font-size: 11px;");
+            return;
+        }
+        
+        loginButton->setEnabled(false);
+        retryButton->setEnabled(false);
+        statusLabel->setText("Logging in... Please wait (may take several seconds)");
+        statusLabel->setStyleSheet("color: blue; font-size: 11px;");
+        
+        performLogin(password);
+    });
+    
+    connect(retryButton, &QPushButton::clicked, [=]() {
+        QString password = passwordInput->text();
+        if (password.isEmpty()) {
+            statusLabel->setText("Please enter a password");
+            statusLabel->setStyleSheet("color: red; font-size: 11px;");
+            return;
+        }
+        
+        retryButton->setEnabled(false);
+        statusLabel->setText("Retrying login...");
+        statusLabel->setStyleSheet("color: blue; font-size: 11px;");
+        
+        performLogin(password);
+    });
+    
+    // Store dialog reference for status updates
+    loginDialog->setProperty("statusLabel", QVariant::fromValue(statusLabel));
+    loginDialog->setProperty("loginButton", QVariant::fromValue(loginButton));
+    loginDialog->setProperty("retryButton", QVariant::fromValue(retryButton));
+    
+    // Show dialog
+    loginDialog->exec();
+}
+
+void MainWindow::performLogin(const QString &password)
+{
+    if (!isConnected) {
+        return;
+    }
+    
+    currentPassword = password;
+    loginRetryCount = 0;
+    waitingForLoginTest = true;
+    pendingLoginPassword = password;
+    
+    // Send the real password first
+    QString command = QString("login %1\n").arg(password);
+    QByteArray data = command.toUtf8();
+    serialPort->write(data);
+    
+    logMessage(QString("Sending login command (attempt %1/%2)").arg(loginRetryCount + 1).arg(MAX_LOGIN_RETRIES), "> ");
+    
+    // Start timeout timer
+    loginTimeoutTimer->start(LOGIN_RETRY_TIMEOUT_MS);
+}
+
+void MainWindow::sendLoginTestCommand()
+{
+    // First send "login test" to check if already authenticated
+    QString testCommand = "login test\n";
+    QByteArray testData = testCommand.toUtf8();
+    serialPort->write(testData);
+    
+    logMessage("Sending login test command", "> ");
+}
+
+void MainWindow::checkLoginResponse(const QString &response)
+{
+    QString trimmedResponse = response.trimmed();
+    
+    // Check for "messages dropped" indicating connection is ready
+    if (trimmedResponse.contains("messages dropped", Qt::CaseInsensitive)) {
+        logMessage("Connection established - messages dropped detected", "[INFO] ");
+        statusLabel->setText("Connected (Login Required)");
+        statusLabel->setStyleSheet("color: orange; font-weight: bold;");
+        logMessage("Nordic terminal ready for commands", "[INFO] ");
+        
+        // If we're waiting for login test after sending real password, send it now
+        if (waitingForLoginTest && !pendingLoginPassword.isEmpty()) {
+            sendLoginTestCommand();
+        }
+    }
+    
+    // Check for successful login
+    if (trimmedResponse.contains("OK", Qt::CaseInsensitive)) {
+        isLoggedIn = true;
+        lastLoginTime = QDateTime::currentDateTime();
+        loginTimeoutTimer->stop();
+        loginTimeoutTimer->start(LOGIN_TIMEOUT_MS); // Start 30-second timeout
+        
+        logMessage("Login successful", "[INFO] ");
+        statusLabel->setText("Connected & Logged In");
+        statusLabel->setStyleSheet("color: green; font-weight: bold;");
+        
+        // Close any open login dialog
+        QWidgetList widgets = QApplication::topLevelWidgets();
+        for (QWidget *widget : widgets) {
+            if (widget->windowTitle() == "Device Login") {
+                widget->close();
+                break;
+            }
+        }
+    }
+    // Check for "Already Logged in" - this is also a success case
+    else if (trimmedResponse.contains("Already Logged in", Qt::CaseInsensitive) || 
+             trimmedResponse.contains("Already Logged In", Qt::CaseInsensitive)) {
+        isLoggedIn = true;
+        lastLoginTime = QDateTime::currentDateTime();
+        loginTimeoutTimer->stop();
+        loginTimeoutTimer->start(LOGIN_TIMEOUT_MS); // Start 30-second timeout
+        
+        logMessage("Already logged in", "[INFO] ");
+        statusLabel->setText("Connected & Logged In");
+        statusLabel->setStyleSheet("color: green; font-weight: bold;");
+        
+        // Close any open login dialog
+        QWidgetList widgets = QApplication::topLevelWidgets();
+        for (QWidget *widget : widgets) {
+            if (widget->windowTitle() == "Device Login") {
+                widget->close();
+                break;
+            }
+        }
+    }
+    // Check for "Already authenticated" from login test command
+    else if (trimmedResponse.contains("Already authenticated", Qt::CaseInsensitive)) {
+        isLoggedIn = true;
+        lastLoginTime = QDateTime::currentDateTime();
+        loginTimeoutTimer->stop();
+        loginTimeoutTimer->start(LOGIN_TIMEOUT_MS); // Start 30-second timeout
+        waitingForLoginTest = false;
+        
+        logMessage("Already authenticated", "[INFO] ");
+        statusLabel->setText("Connected & Logged In");
+        statusLabel->setStyleSheet("color: green; font-weight: bold;");
+        
+        // Close any open login dialog
+        QWidgetList widgets = QApplication::topLevelWidgets();
+        for (QWidget *widget : widgets) {
+            if (widget->windowTitle() == "Device Login") {
+                widget->close();
+                break;
+            }
+        }
+    }
+    // Check for shell prompt or serial input resuming after login test
+    else if (waitingForLoginTest && (trimmedResponse.contains("uart:~$", Qt::CaseInsensitive) || 
+                                    trimmedResponse.contains("dev>", Qt::CaseInsensitive) ||
+                                    trimmedResponse.contains("login>", Qt::CaseInsensitive))) {
+        // Serial input has resumed, send the actual login command
+        waitingForLoginTest = false;
+        
+        if (!isLoggedIn && !pendingLoginPassword.isEmpty()) {
+            // Send actual login command
+            QString command = QString("login %1\n").arg(pendingLoginPassword);
+            QByteArray data = command.toUtf8();
+            serialPort->write(data);
+            
+            logMessage(QString("Sending login command (attempt %1/%2)").arg(loginRetryCount + 1).arg(MAX_LOGIN_RETRIES), "> ");
+            pendingLoginPassword.clear();
+        }
+    }
+    // Check for "Not Logged In" - this is a failure case
+    else if (trimmedResponse.contains("Not Logged In", Qt::CaseInsensitive) || 
+             trimmedResponse.contains("Not Logged in", Qt::CaseInsensitive)) {
+        loginRetryCount++;
+        logMessage(QString("Login failed - Not Logged In (attempt %1/%2)").arg(loginRetryCount).arg(MAX_LOGIN_RETRIES), "[ERROR] ");
+        
+        // Update dialog status
+        updateLoginDialogStatus("Login failed - Not Logged In", "red");
+        
+        if (loginRetryCount >= MAX_LOGIN_RETRIES) {
+            handleLoginTimeout();
+        } else {
+            // Enable retry button after delay
+            QTimer::singleShot(LOGIN_RETRY_TIMEOUT_MS, this, [this]() {
+                updateLoginDialogStatus("Login failed - click Retry to try again", "orange");
+                enableLoginDialogRetry();
+            });
+        }
+    }
+    // Check for other error cases
+    else if (trimmedResponse.contains("ERROR", Qt::CaseInsensitive) || 
+             trimmedResponse.contains("FAIL", Qt::CaseInsensitive) ||
+             trimmedResponse.contains("Invalid", Qt::CaseInsensitive)) {
+        loginRetryCount++;
+        logMessage(QString("Login failed - %1 (attempt %2/%3)").arg(trimmedResponse).arg(loginRetryCount).arg(MAX_LOGIN_RETRIES), "[ERROR] ");
+        
+        // Update dialog status
+        updateLoginDialogStatus(QString("Login failed - %1").arg(trimmedResponse), "red");
+        
+        if (loginRetryCount >= MAX_LOGIN_RETRIES) {
+            handleLoginTimeout();
+        } else {
+            // Enable retry button after delay
+            QTimer::singleShot(LOGIN_RETRY_TIMEOUT_MS, this, [this]() {
+                updateLoginDialogStatus("Login failed - click Retry to try again", "orange");
+                enableLoginDialogRetry();
+            });
+        }
+    }
+    // If we get here, it might be a partial response or unrelated data
+    // We'll let the timeout handle it
+}
+
+void MainWindow::handleLoginTimeout()
+{
+    isLoggedIn = false;
+    loginTimeoutTimer->stop();
+    
+    logMessage("Login timeout - authentication required", "[WARNING] ");
+    statusLabel->setText("Connected (Login Required)");
+    statusLabel->setStyleSheet("color: orange; font-weight: bold;");
+    
+    // Update any open login dialog
+    QWidgetList widgets = QApplication::topLevelWidgets();
+    for (QWidget *widget : widgets) {
+        if (widget->windowTitle() == "Device Login") {
+            QLabel *statusLabel = widget->findChild<QLabel*>();
+            if (statusLabel) {
+                statusLabel->setText("Login timeout - please retry");
+                statusLabel->setStyleSheet("color: red; font-size: 11px;");
+            }
+            break;
+        }
+    }
+}
+
+bool MainWindow::isLoginRequired(const QString &command)
+{
+    // Commands that don't require login
+    QStringList noLoginCommands = {"backup"};
+    
+    for (const QString &noLoginCmd : noLoginCommands) {
+        if (command.trimmed().toLower().startsWith(noLoginCmd.toLower())) {
+            return false;
+        }
+    }
+    
+    return true;
+}
+
+void MainWindow::refreshLogin()
+{
+    if (isLoggedIn && !currentPassword.isEmpty()) {
+        performLogin(currentPassword);
+    }
+}
+
+void MainWindow::updateLoginDialogStatus(const QString &message, const QString &color)
+{
+    // Find and update the login dialog status label
+    QWidgetList widgets = QApplication::topLevelWidgets();
+    for (QWidget *widget : widgets) {
+        if (widget->windowTitle() == "Device Login") {
+            QLabel *statusLabel = widget->findChild<QLabel*>();
+            if (statusLabel) {
+                statusLabel->setText(message);
+                statusLabel->setStyleSheet(QString("color: %1; font-size: 11px;").arg(color));
+            }
+            break;
+        }
+    }
+}
+
+void MainWindow::enableLoginDialogRetry()
+{
+    // Find and enable the retry button in the login dialog
+    QWidgetList widgets = QApplication::topLevelWidgets();
+    for (QWidget *widget : widgets) {
+        if (widget->windowTitle() == "Device Login") {
+            QPushButton *retryButton = widget->findChild<QPushButton*>();
+            if (retryButton && retryButton->text() == "Retry") {
+                retryButton->setEnabled(true);
+            }
+            break;
+        }
+    }
+}
+
+void MainWindow::restoreConfiguration()
+{
+    if (!isConnected) {
+        QMessageBox::warning(this, "Not Connected", "Please connect to the device first.");
+        return;
+    }
+    
+    // Show warning dialog
+    QMessageBox::StandardButton reply = QMessageBox::warning(this, "Restore Configuration", 
+        "⚠️ <b>Warning:</b> This will overwrite your current configuration with the backup.\n\n"
+        "This action cannot be undone. Are you sure you want to proceed?",
+        QMessageBox::Yes | QMessageBox::No);
+    
+    if (reply == QMessageBox::Yes) {
+        // Send restore command: backup copyinto 1 0
+        QString command = "backup copyinto 1 0\n";
+        QByteArray data = command.toUtf8();
+        serialPort->write(data);
+        
+        logMessage("Sending restore command: backup copyinto 1 0", "> ");
+        logMessage("Configuration restore initiated", "[INFO] ");
+        
+        // Reset auto-clear timer
+        resetAutoClearTimer();
+    }
 } 

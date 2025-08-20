@@ -55,7 +55,13 @@ private:
     void setupUI();
     void createMenuBar();
     void createToolbar();
-    void createDualPaneInterface();
+    void createTabInterface();
+    void setupSerialTerminalTab();
+    void setupCommandInterfaceTab();
+    void setupKeyManagementTab();
+    void setupConfigTab();
+    void setupBackupTab();
+    void setupMenuTab();
     void populateComPorts();
     void populateBaudRates();
     void connectToPort();
@@ -79,13 +85,27 @@ private:
     bool isLikelyCorruptedLogLine(const QString &line);
     
     // Key Management functions
-    void setupKeyManagementUI();
     void selectPemFile();
     void uploadCertificate();
     void processPemFile(const QString &filePath);
     void sendKeymgmtLine(const QString &line, int secTag, const QString &certType);
     void updateKeymgmtProgress(int current, int total);
     void abortUpload();
+    
+    // Backup functions
+    void saveConfiguration();
+    void restoreConfiguration();
+    
+    // Login functions
+    void showLoginDialog();
+    void performLogin(const QString &password);
+    void sendLoginTestCommand();
+    void checkLoginResponse(const QString &response);
+    void handleLoginTimeout();
+    bool isLoginRequired(const QString &command);
+    void refreshLogin();
+    void updateLoginDialogStatus(const QString &message, const QString &color);
+    void enableLoginDialogRetry();
     
     // Command history functions
     void addCommandToHistory(const QString &command);
@@ -100,9 +120,9 @@ private:
     bool userScrolling;
     QWidget *centralWidget;
     QWidget *toolbarWidget;
+    QTabWidget *mainTabWidget;
     QTextEdit *terminal;
     QTextEdit *commandOutput;
-    QSplitter *mainSplitter;
     QPushButton *connectButton;
     QPushButton *sendButton;
     QPushButton *refreshPortsButton;
@@ -112,8 +132,15 @@ private:
     QLineEdit *commandInput;
     QLabel *statusLabel;
     
-    // Key Management UI elements
+    // Tab widgets
+    QWidget *serialTerminalTab;
+    QWidget *commandInterfaceTab;
     QWidget *keymgmtWidget;
+    QWidget *configTab;
+    QWidget *backupTab;
+    QWidget *menuTab;
+    
+    // Key Management UI elements
     QLineEdit *pemFileEdit;
     QPushButton *selectPemButton;
     QComboBox *certTypeCombo;
@@ -133,8 +160,20 @@ private:
     QString currentInput;
     
     bool isConnected;
+    bool isLoggedIn;
+    QString currentPassword;
     QString currentComPort;
     int currentBaudRate;
+    
+    // Login management
+    QTimer *loginTimeoutTimer;
+    QDateTime lastLoginTime;
+    static const int LOGIN_TIMEOUT_MS = 30000; // 30 seconds
+    static const int LOGIN_RETRY_TIMEOUT_MS = 15000; // 15 seconds for retry (increased for computational delay)
+    int loginRetryCount;
+    static const int MAX_LOGIN_RETRIES = 3;
+    bool waitingForLoginTest;
+    QString pendingLoginPassword;
     
     // Log file functionality
     QFile *logFile;
